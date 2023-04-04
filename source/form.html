@@ -11,13 +11,13 @@
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link nav__link--active" href="./index.html">Главная</a>
+              <a class="nav__link" href="./index.html">Главная</a>
             </li>
             <li class="nav__item">
               <a class="nav__link" href="./catalog.html">Фото и видео</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="./form.html">Форма отзыва</a>
+              <a class="nav__link nav__link--active" href="./form.html">Форма отзыва</a>
             </li>
             <li class="nav__item">
               <a class="nav__link" href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
@@ -31,6 +31,9 @@
       </header>
 
       <main class="main">
+        <div class="sedona-image">
+          <img class="sedona-image__text" src="./img/sedona-single.svg" width="229" height="39" alt="Седона">
+        </div>
         <section class="feedback">
           <h1 class="visually-hidden">Отзывы</h1>
           <h2 class="feedback__title">Оставьте свой отзыв</h2>
@@ -55,11 +58,11 @@
               <h2 class="contacts__title">Контактная информация:</h2>
               <div class="field">
                 <label for="tel">Контактный телефон*:</label>
-                <input type="text" name="contacts" value="Введите телефон" id="tel">
+                <input type="tel" name="contacts" value="Введите телефон" id="tel">
               </div>
               <div class="field">
                 <label for="mail">Электронная почта*:</label>
-                <input type="text" name="contacts" value="Введите e-mail" id="mail">
+                <input type="email" name="contacts" value="Введите e-mail" id="mail">
               </div>
             </div>
             <div class="impression">
@@ -81,26 +84,26 @@
               <fieldset>
                 <legend>Посещенные достопримечательности:</legend>
                 <div class="field">
-                  <input type="checkbox" id="bridge" name="sights">
+                  <input type="checkbox" id="bridge" name="bridge" checked>
                   <label for="bridge">Мост дьявола</label>
                 </div>
                 <div class="field">
-                  <input type="checkbox" id="mountain" name="sights">
+                  <input type="checkbox" id="mountain" name="mountain" checked>
                   <label for="mountain">Гора-Колокол</label>
                 </div>
                 <div class="field">
-                  <input type="checkbox" id="slide-park" name="sights">
+                  <input type="checkbox" id="slide-park" name="slide-park" checked>
                   <label for="slide-park">Слайд-парк</label>
                 </div>
                 <div class="field">
-                  <input type="checkbox" id="cliffs" name="sights">
+                  <input type="checkbox" id="cliffs" name="cliffs">
                   <label for="cliffs">Красные скалы</label>
                 </div>
               </fieldset>
             </div>
             <div class="emotions">
               <label for="emotions" class="emotions__label">Опишите свои эмоции:</label>
-              <textarea name="emotions" id="emotions" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
+              <textarea name="emotions" id="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
             </div>
             <button type="submit">Отправить отзыв</button>
             <span>* — обязательные поля</span>
@@ -121,23 +124,21 @@
             <a class="social__link" href="#"><span class="visually-hidden">Ютуб</span></a>
           </li>
         </ul>
-        <div class="main-footer__copyright copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
-        </div>
+        <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">Разработано
+          <img src="./img/htmlacademy.svg" width="27" height="35" alt="Логотип html академии">
+        </a>
       </footer>
 
       <div class="modal">
         <h2 class="modal__title">Что-то пошло не так!</h2>
         <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <button class="modal__button">Ок</button>
+        <button class="modal__button" type="button">Ок</button>
       </div>
 
       <div class="modal">
         <h2 class="modal__title">Ваш отзыв отправлен!</h2>
         <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте.</p>
-        <div class="modal__bottom">
-          <button class="modal__button">Закрыть окно</button>
-        </div>
+        <button class="modal__button" type="button">Закрыть окно</button>
       </div>
     </div>
   </body>
