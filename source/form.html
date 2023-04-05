@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body class="page">
+    <div class="container">
+      <header class="main-header">
+        <a href="./index.html"><img class="main-header__logo" src="./img/logo.svg" width="185" height="96" alt="Логотип сайта Седона"></a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="./index.html">Главная</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="./catalog.html">Фото и видео</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav__link--active" href="./form.html">Форма отзыва</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="main-header__toggle-menu" type="button" aria-label="Меню" aria-expanded="true">
+          <img src="./source/img/inline-svg/icon-menu.svg" width="23" height="22"  alt="">
+          <img src="./source/img/inline-svg/icon-cross.svg" width="23" height="23" alt="">
+        </button>
+      </header>
+
+      <main class="main">
+        <div class="sedona-image">
+          <img class="sedona-image__text" src="./img/sedona-single.svg" width="229" height="39" alt="Седона">
+        </div>
+        <section class="feedback">
+          <h1 class="visually-hidden">Отзывы</h1>
+          <h2 class="feedback__title">Оставьте свой отзыв</h2>
+          <p class="feedback__text">Помогите нашим отелям стать лучше! Oставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          <form action="#" method="post">
+            <div class="user">
+              <h2 class="user__title">Представьтесь:</h2>
+              <div class="field">
+                <label for="name">Имя*:</label>
+                <input type="text" name="submitted-name" autocomplete="name" id="name" value="Пётр" required>
+              </div>
+              <div class="field">
+                <label for="surname">Фамилия*:</label>
+                <input type="text" name="submitted-name" autocomplete="name" id="surname" value="Пустота" required>
+              </div>
+              <div>
+                <label for="patronymic">Отчество*:</label>
+                <input type="text" name="submitted-name" autocomplete="name" id="patronymic" value="Викторович" required>
+              </div>
+            </div>
+            <div class="contacts">
+              <h2 class="contacts__title">Контактная информация:</h2>
+              <div class="field">
+                <label for="tel">Контактный телефон*:</label>
+                <input type="tel" name="contacts" value="Введите телефон" id="tel">
+              </div>
+              <div class="field">
+                <label for="mail">Электронная почта*:</label>
+                <input type="email" name="contacts" value="Введите e-mail" id="mail">
+              </div>
+            </div>
+            <div class="impression">
+              <h2 class="impression__title">Ваше общее впечатление:</h2>
+              <div class="field">
+                <input type="radio" id="positive" name="impression" value="Скорее положительное" checked>
+                <label for="positive">Скорее положительное</label>
+              </div>
+              <div class="field">
+                <input type="radio" id="negative" name="impression" value="Скорее негативное">
+                <label for="negative">Скорее негативное</label>
+              </div>
+              <div class="field">
+                <input type="radio" id="difficult" name="impression" value="Затрудняюсь ответить">
+                <label for="difficult">Затрудняюсь ответить</label>
+              </div>
+            </div>
+            <div class="sights">
+              <fieldset>
+                <legend>Посещенные достопримечательности:</legend>
+                <div class="field">
+                  <input type="checkbox" id="bridge" name="bridge" checked>
+                  <label for="bridge">Мост дьявола</label>
+                </div>
+                <div class="field">
+                  <input type="checkbox" id="mountain" name="mountain" checked>
+                  <label for="mountain">Гора-Колокол</label>
+                </div>
+                <div class="field">
+                  <input type="checkbox" id="slide-park" name="slide-park" checked>
+                  <label for="slide-park">Слайд-парк</label>
+                </div>
+                <div class="field">
+                  <input type="checkbox" id="cliffs" name="cliffs">
+                  <label for="cliffs">Красные скалы</label>
+                </div>
+              </fieldset>
+            </div>
+            <div class="emotions">
+              <label for="emotions" class="emotions__label">Опишите свои эмоции:</label>
+              <textarea name="emotions" id="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
+            </div>
+            <button type="submit">Отправить отзыв</button>
+            <span>* — обязательные поля</span>
+        </form>
+        </section>
+      </main>
+
+      <footer class="main-footer">
+        <b class="main-footer__text">#visitsedona</b>
+        <ul class="social">
+          <li class="social__item">
+            <a class="social__link" href="#"><span class="visually-hidden">Вконтакте</span></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#"><span class="visually-hidden">Телеграм</span></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#"><span class="visually-hidden">Ютуб</span></a>
+          </li>
+        </ul>
+        <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">Разработано
+          <img src="./img/htmlacademy.svg" width="27" height="35" alt="Логотип html академии">
+        </a>
+      </footer>
+
+      <div class="modal">
+        <h2 class="modal__title">Что-то пошло не так!</h2>
+        <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="modal__button" type="button">Ок</button>
+      </div>
+
+      <div class="modal">
+        <h2 class="modal__title">Ваш отзыв отправлен!</h2>
+        <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте.</p>
+        <button class="modal__button" type="button">Закрыть окно</button>
+      </div>
+    </div>
+  </body>
+</html>
