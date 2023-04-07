@@ -11,4 +11,13 @@
 
 .nav__link {
   display: flex;
+  justify-content: center;
+  padding-inline: 20px;
+  padding-block: 17px 12px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--white);
+  background-color: var(--blue);
 }
