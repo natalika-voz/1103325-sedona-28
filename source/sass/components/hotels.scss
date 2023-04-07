@@ -1,0 +1,26 @@
+.hotels {
+  padding-block-start: 39px;
+}
+
+.hotels__title {
+  margin-block-start: 0;
+  margin-block-end: 31px;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.hotels__text {
+  margin-block-start: 0;
+  margin-block-end: 32px;
+  color: var(--gray);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.hotels__button {
+  width: 100%;
+  margin-block-end: 49px;
+}

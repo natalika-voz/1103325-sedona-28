@@ -1,0 +1,15 @@
+.fieldset {
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding: 0;
+  border: none;
+}
+
+.fieldset__legend {
+  margin-block-end: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+}

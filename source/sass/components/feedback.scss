@@ -1,0 +1,21 @@
+.feedback {
+  padding-block-start: 36px;
+}
+
+.feedback__title {
+  margin-block-start: 0;
+  margin-block-end: 24px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.feedback__text {
+  margin-block-start: 0;
+  margin-block-end: 28px;
+  color: var(--gray);
+  text-transform: uppercase;
+  text-align: center;
+}

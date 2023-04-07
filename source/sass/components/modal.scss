@@ -1,0 +1,28 @@
+.modal {
+  &--error {
+    padding: 45px 41px 35px;
+  }
+}
+
+.modal__title {
+  margin-block-start: 0;
+  margin-block-end: 36px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.modal__text {
+  margin-block-start: 0;
+  margin-block-end: 28px;
+  color: var(--gray);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.modal__footer {
+  padding: 20px;
+  background-color: var(--light-gray);
+}

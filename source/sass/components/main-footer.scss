@@ -1,0 +1,15 @@
+.main-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block-start: 33px;
+  padding-block-end: 33px;
+}
+
+.main-footer__text {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  align-items: center;
+}

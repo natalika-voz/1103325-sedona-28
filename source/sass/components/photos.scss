@@ -1,0 +1,28 @@
+.photos {
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+.photo {
+  padding-block-start: 24px;
+}
+
+.photo__item {
+  margin: 0;
+}
+
+.photo__image {
+  display: block;
+  margin-block-end: 15px;
+}
+
+.photo__description {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.photo__autor {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  color: var(--gray);
+}
