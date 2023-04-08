@@ -1,3 +1,4 @@
+@import "./viewports.scss";
 @import "./colors.scss";
 @import "./fonts.scss";
 
@@ -45,7 +46,6 @@ input[type="radio"].visually-hidden {
 }
 
 .container {
-  max-width: 1240px;
-  margin-inline-start: auto;
-  margin-inline-end: auto;
+  max-width: 1200px;
+  margin-inline: auto;
 }

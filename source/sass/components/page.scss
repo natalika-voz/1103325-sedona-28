@@ -1,0 +1,10 @@
+.page--mobile-menu {
+  & .nav {
+    display: block;
+  }
+
+  & .toggle-menu {
+    background-image: url("../img/icon-cross.svg");
+    background-color: var(--blue);
+  }
+}

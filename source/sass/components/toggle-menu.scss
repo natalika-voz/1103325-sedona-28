@@ -1,0 +1,16 @@
+.toggle-menu {
+  z-index: 1;
+  display: inline-flex;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--white);
+  background-image: url("../img/icon-menu.svg");
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}

@@ -1,7 +1,16 @@
 .main-header {
+  position: relative;
   min-height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-inline: 13px;
 }
 
-.main-header__link {
+.main-header__logo {
   display: flex;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
