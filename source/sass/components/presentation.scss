@@ -3,8 +3,7 @@
 }
 
 .presentation__title {
-  margin-block-start: 0;
-  margin-block-end: 37px;
+  margin-block: 0 37px;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
@@ -13,8 +12,7 @@
 }
 
 .presentation__text {
-  margin-block-start: 0;
-  margin-block-end: 40px;
+  margin-block: 0 40px;
   color: var(--gray);
   text-transform: uppercase;
   text-align: center;

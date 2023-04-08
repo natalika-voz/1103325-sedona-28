@@ -12,17 +12,17 @@
   flex-direction: column;
   row-gap: 16px;
   padding-inline-start: 47px;
-  background-image: url("../../img/icon-house.svg");
+  background-image: url("../img/icon-house.svg");
   background-repeat: no-repeat;
 
   &--food {
-    background-image: url("../../img/icon-burger.svg");
+    background-image: url("../img/icon-burger.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
   }
 
   &--souvenirs {
-    background-image: url("../../img/icon-gift.svg");
+    background-image: url("../img/icon-gift.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
   }
