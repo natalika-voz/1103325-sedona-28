@@ -1,0 +1,19 @@
+.media {
+  padding-block: 37px 25px;
+}
+
+.media__title {
+  margin-block: 0 35px;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.media__text {
+  margin-block: 0;
+  color: var(--gray);
+  text-transform: uppercase;
+  text-align: center;
+}

@@ -1,0 +1,16 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 180px;
+  min-height: 58px;
+  padding: 6px 20px;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  color: var(--white);
+  cursor: pointer;
+  background-color: var(--blue);
+  border: none;
+  text-transform: uppercase;
+}

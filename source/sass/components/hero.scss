@@ -1,0 +1,19 @@
+.hero {
+  padding-block: 32px 16px;
+}
+
+.hero__title {
+  margin-block: 0 35px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.hero__text {
+  margin-block: 0;
+  color: var(--gray);
+  text-transform: uppercase;
+  text-align: center;
+}

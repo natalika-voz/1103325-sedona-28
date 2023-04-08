@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body class="page">
     <div class="container">
@@ -13,16 +15,16 @@
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link" href="./index.html">Главная</a>
+              <a class="nav__link button" href="./index.html">Главная</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link nav__link--active" href="./catalog.html">Фото и видео</a>
+              <a class="nav__link nav__link--active button" href="./catalog.html">Фото и видео</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="./form.html">Форма отзыва</a>
+              <a class="nav__link button" href="./form.html">Форма отзыва</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
+              <a class="nav__link button" href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
             </li>
           </ul>
         </nav>
@@ -30,8 +32,8 @@
       </header>
 
       <main class="main">
-        <div class="sedona-image">
-          <img class="sedona-image__text" src="./img/sedona-single.svg" width="229" height="39" alt="Седона">
+        <div class="sedona-image sedona-image--catalog">
+          <img class="sedona-image__text" src="./img/sedona-image/sedona-single.svg" width="229" height="39" alt="Седона">
         </div>
         <section class="media">
           <h1 class="media__title">Фото и видео</h1>
@@ -40,7 +42,7 @@
             <li class="photo">
               <figure class="photo__item">
                 <a href="#">
-                  <img src="./img/catalog/photo-1-m.jpg" width="280" height="280" alt="Изображение фотографии народные просторы">
+                  <img class="photo__image" src="./img/catalog/photo-1-m.jpg" width="280" height="280" alt="Изображение фотографии народные просторы">
                 </a>
                 <figcaption class="photo__description">Народные просторы</figcaption>
               </figure>
@@ -50,7 +52,7 @@
             <li class="photo">
               <figure class="photo__item">
                 <a href="#">
-                  <img src="./img/catalog/photo-2-m.jpg" width="280" height="280" alt="Изображение фотографии местная растительность">
+                  <img class="photo__image" src="./img/catalog/photo-2-m.jpg" width="280" height="280" alt="Изображение фотографии местная растительность">
                 </a>
                 <figcaption class="photo__description">Местная растительность</figcaption>
               </figure>
@@ -60,22 +62,22 @@
             <li class="photo">
               <figure class="photo__item">
                 <a href="#">
-                  <img src="./img/catalog/photo-3-m.jpg" width="280" height="280" alt="Изображение фотографии дорога на север">
+                  <img class="photo__image" src="./img/catalog/photo-3-m.jpg" width="280" height="280" alt="Изображение фотографии дорога на север">
                 </a>
                 <figcaption class="photo__description">Дорога на север</figcaption>
               </figure>
               <p class="photo__autor">Автор фото: Петр</p>
-              <span class="reaction">143</span>
+              <span class="reaction">96</span>
             </li>
             <li class="photo">
               <figure class="photo__item">
                 <a href="#">
-                  <img src="./img/catalog/photo-4-m.jpg" width="280" height="280" alt="Изображение фотографии мост дьявола">
+                  <img class="photo__image" src="./img/catalog/photo-4-m.jpg" width="280" height="280" alt="Изображение фотографии мост дьявола">
                 </a>
                 <figcaption class="photo__description">Мост дьявола</figcaption>
               </figure>
               <p class="photo__autor">Автор фото: Антон</p>
-              <span class="reaction">143</span>
+              <span class="reaction">254</span>
             </li>
           </ul>
         </section>
@@ -94,17 +96,17 @@
         <b class="main-footer__text">#visitsedona</b>
         <ul class="social">
           <li class="social__item">
-            <a class="social__link" href="#"><span class="visually-hidden">Вконтакте</span></a>
+            <a class="social__link" href="https://vk.com/htmlacademy"><span class="visually-hidden">Вконтакте</span></a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="#"><span class="visually-hidden">Телеграм</span></a>
+            <a class="social__link" href="https://t.me/htmlacademy"><span class="visually-hidden">Телеграм</span></a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="#"><span class="visually-hidden">Ютуб</span></a>
+            <a class="social__link" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">Ютуб</span></a>
           </li>
         </ul>
         <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">Разработано
-          <img src="./img/htmlacademy.svg" width="27" height="35" alt="Логотип html академии">
+          <img class="copyright__image" src="./img/htmlacademy.svg" width="27" height="35" alt="Логотип html академии">
         </a>
       </footer>
     </div>

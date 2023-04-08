@@ -1,0 +1,53 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-block-end: 16px;
+}
+
+.field__label {
+  color: var(--gray);
+  text-transform: uppercase;
+
+  &--bold {
+    text-transform: none;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+  }
+
+  &--large {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+    text-align: center;
+  }
+}
+
+.field__input,
+.field__textarea {
+  padding: 16px;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  border: none;
+  background-color: var(--light-gray);
+  resize: vertical;
+}
+
+.field__textarea {
+  min-height: 150px;
+}
+
+.field__button {
+  width: 100%;
+}
+
+.field__span {
+  display: block;
+  font-size: 12px;
+  color: var(--gray-rgba);
+  text-transform: uppercase;
+  text-align: right;
+}

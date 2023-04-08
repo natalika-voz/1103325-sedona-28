@@ -1,0 +1,19 @@
+.presentation {
+  padding-block-start: 17px;
+}
+
+.presentation__title {
+  margin-block: 0 37px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.presentation__text {
+  margin-block: 0 40px;
+  color: var(--gray);
+  text-transform: uppercase;
+  text-align: center;
+}
