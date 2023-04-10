@@ -7,6 +7,11 @@
   background-color: var(--blue);
   background-repeat: no-repeat;
   background-position: top 0 right 0;
+
+  @media (min-width: $tablet-width) {
+    background-size: cover;
+    height: 518px;
+  }
 }
 
 .sedona-image--catalog {

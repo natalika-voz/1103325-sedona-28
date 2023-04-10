@@ -1,6 +1,13 @@
 .photos {
   list-style: none;
   padding-inline-start: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+  }
 }
 
 .photo {
@@ -10,6 +17,7 @@
 .photo__item {
   margin: 0;
 }
+
 
 .photo__image {
   display: block;

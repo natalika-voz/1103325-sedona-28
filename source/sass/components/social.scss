@@ -7,8 +7,21 @@
 }
 
 .social__link {
+  position: relative;
   display: block;
+  width: 48px;
+  height: 48px;
   background-color: var(--blue);
-  padding-inline: 14px;
-  padding-block: 17px;
+  background-image: url("../img/vk.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  outline: none;
+
+  &--telegram {
+    background-image: url("../img/telegram.svg");
+  }
+
+  &--youtube {
+    background-image: url("../../img/youtube.svg");
+  }
 }

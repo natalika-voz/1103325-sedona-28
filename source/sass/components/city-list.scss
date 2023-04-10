@@ -5,26 +5,37 @@
   padding-block: 23px 46px;
   padding-inline: 18px;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    min-height: 330px;
+    flex-direction: row;
+  }
 }
 
 .city-list__item {
   display: flex;
   flex-direction: column;
   row-gap: 16px;
+  padding-block-start: 8px;
   padding-inline-start: 47px;
-  background-image: url("../img/icon-house.svg");
+  background-image: url("../img/index/icon-house.svg");
+  background-size: 40px;
   background-repeat: no-repeat;
 
   &--food {
-    background-image: url("../img/icon-burger.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
+    background-image: url("../img/index/icon-burger.svg");
   }
 
   &--souvenirs {
-    background-image: url("../img/icon-gift.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
+    background-image: url("../img/index/icon-gift.svg");
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-inline-start: 0;
+    padding-block-start: 158px;
+    background-size: 77px 72px;
+    background-position: center 37px;
+    text-align: center;
   }
 }
 

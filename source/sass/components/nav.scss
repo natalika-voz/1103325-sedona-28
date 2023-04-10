@@ -4,6 +4,10 @@
   top: 0;
   left: 0;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    height: 100%;
+  }
 }
 
 .nav__list {
@@ -13,11 +17,20 @@
   margin-block: 0;
   padding-inline-start: 0;
   list-style: none;
-  mix-blend-mode: normal;
-  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    height: 100%;
+  }
+}
+
+.nav__item {
+  @media (min-width: $tablet-width) {
+    width: 20%;
+
+    &:nth-of-type(3) {
+      margin-left: auto;
+    }
   }
 }
 
@@ -32,4 +45,15 @@
   text-transform: uppercase;
   color: var(--white);
   background-color: var(--blue);
+
+  @media (min-width: $tablet-width) {
+    background-color: var(--white);
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--black);
+
+    &--active {
+      color: var(--brown);
+    }
+  }
 }

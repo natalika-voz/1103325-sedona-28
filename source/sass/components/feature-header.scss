@@ -1,6 +1,6 @@
 .feature-header {
   padding-inline: 18px;
-  padding-block: 33px 40px;
+  padding-block: 71px 40px;
   background-color: var(--blue);
   color: var(--white);
   text-transform: uppercase;
@@ -10,6 +10,10 @@
     padding-block: 24px;
     background-color: var(--light-gray);
     color: var(--black);
+  }
+
+  &--bridge {
+    padding-block: 38px 36px;
   }
 }
 
@@ -38,6 +42,8 @@
 }
 
 .feature-header__text {
+  max-width: 264px;
+  margin-inline: auto;
   margin-block: 0;
   text-align: center;
 }

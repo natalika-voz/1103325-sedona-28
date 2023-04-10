@@ -4,6 +4,34 @@
   list-style: none;
 }
 
+.features__item-top {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 256px 1fr;
+  }
+}
+
+.features__item-top--bridge {
+  grid-template-columns: 1fr 256px;
+
+  & .features__image {
+    order: -1;
+  }
+}
+
 .features__image {
   display: block;
+  width: 100%;
+  height: 260px;
+
+  @media (min-width: $tablet-width) {
+    height: 256px;
+  }
+}
+
+.features__gray-area {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
