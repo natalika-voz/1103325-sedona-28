@@ -1,5 +1,6 @@
 .hotels {
-  padding-block-start: 39px;
+  padding-block: 39px 49px;
+  padding-inline: 18px;
 }
 
 .hotels__offer {
@@ -10,7 +11,7 @@
 }
 
 .hotels__title {
-  margin-block: 0 31px;
+  margin-block: 0 21px;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
@@ -27,5 +28,4 @@
 
 .hotels__button {
   width: 100%;
-  margin-block-end: 49px;
 }

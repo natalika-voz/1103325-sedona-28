@@ -6,10 +6,33 @@
   text-transform: uppercase;
 
   &--gray {
+    position: relative;
     padding-inline-start: 18px;
-    padding-block: 24px;
+    padding-block: 25px;
     background-color: var(--light-gray);
     color: var(--black);
+
+    &::before {
+      position: absolute;
+      bottom: 0;
+      left: 18px;
+      content: "";
+      width: calc(100% - 36px);
+      height: 1px;
+      background-color: var(--gray-dark);
+    }
+
+    &:last-child::before {
+      content: none;
+    }
+  }
+
+  &--road {
+    padding-block: 24px 25px;
+  }
+
+  &--tourists {
+    padding-block: 24px 28px;
   }
 
   &--bridge {
@@ -46,4 +69,8 @@
   margin-inline: auto;
   margin-block: 0;
   text-align: center;
+
+  &--small {
+    max-width: 255px;
+  }
 }
