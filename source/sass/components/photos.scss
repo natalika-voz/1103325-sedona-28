@@ -1,35 +1,14 @@
 .photos {
   list-style: none;
+  margin-block: 0;
   padding-inline-start: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 
   @media (min-width: $tablet-width) {
     display: grid;
+    grid-template-areas:
+      "f f"
+      "l r"
+      "d .";
   }
 }
 
-.photo {
-  padding-block-start: 24px;
-}
-
-.photo__item {
-  margin: 0;
-}
-
-
-.photo__image {
-  display: block;
-  margin-block-end: 15px;
-}
-
-.photo__description {
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.photo__autor {
-  margin-block: 0;
-  color: var(--gray);
-}

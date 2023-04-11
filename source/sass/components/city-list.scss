@@ -9,6 +9,8 @@
   @media (min-width: $tablet-width) {
     min-height: 330px;
     flex-direction: row;
+    padding-block-start: 19px;
+    padding-inline: 33px;
   }
 }
 
@@ -32,7 +34,7 @@
 
   @media (min-width: $tablet-width) {
     padding-inline-start: 0;
-    padding-block-start: 158px;
+    padding-block-start: 134px;
     background-size: 77px 72px;
     background-position: center 37px;
     text-align: center;
@@ -44,6 +46,10 @@
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .city-list__item-text {

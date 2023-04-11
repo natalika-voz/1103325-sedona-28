@@ -38,6 +38,11 @@
   &--bridge {
     padding-block: 38px 36px;
   }
+
+  @media (min-width: $tablet-width) {
+    padding-inline: 33px;
+    padding-block: 53px 30px;
+  }
 }
 
 .feature-header__container {
@@ -56,12 +61,25 @@
   font-weight: 700;
   line-height: 26px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 190px;
+    font-size: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 390px;
+  }
 }
 
 .feature-header__number {
   display: block;
   margin-block-end: 17px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-block-end: 25px;
+  }
 }
 
 .feature-header__text {

@@ -1,5 +1,6 @@
 .presentation {
   padding-block-start: 17px;
+  padding-inline: 20px;
 }
 
 .presentation__title {
@@ -17,3 +18,15 @@
   text-transform: uppercase;
   text-align: center;
 }
+
+.presentation__preview {
+  position: relative;
+}
+
+
+.presentation__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+

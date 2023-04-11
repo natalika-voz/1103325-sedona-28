@@ -1,5 +1,10 @@
 .media {
   padding-block: 37px 25px;
+  padding-inline: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-inline: 60px;
+  }
 }
 
 .media__title {

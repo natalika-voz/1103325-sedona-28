@@ -7,6 +7,7 @@
 
   @media (min-width: $tablet-width) {
     height: 100%;
+    position: static;
   }
 }
 
@@ -47,6 +48,7 @@
   background-color: var(--blue);
 
   @media (min-width: $tablet-width) {
+    padding-block: 12px;
     background-color: var(--white);
     font-size: 14px;
     line-height: 21px;
