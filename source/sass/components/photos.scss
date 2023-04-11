@@ -10,5 +10,12 @@
       "l r"
       "d .";
   }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-areas:
+      "f f f"
+      "l r d";
+  }
 }
 

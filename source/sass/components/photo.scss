@@ -2,6 +2,8 @@
   padding-block-start: 24px;
 
   @media (min-width: $tablet-width) {
+    padding-block-start: 0;
+
     &:first-child {
       grid-area: f;
     }
@@ -25,7 +27,7 @@
 }
 
 .photo__item-link {
-  margin-block-end: 15px;
+  display: block;
 }
 
 .photo__image {
@@ -39,13 +41,13 @@
 }
 
 .photo__description {
-  margin-block: 0;
+  margin-block: 0 12px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 
 .photo__autor {
-  margin-block: 0;
+  margin-block: 0 11px;
   color: var(--gray);
 }
