@@ -1,6 +1,10 @@
 .feedback {
   padding-block-start: 36px;
   padding-inline: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-inline: 60px;
+  }
 }
 
 .feedback__title {
@@ -10,6 +14,10 @@
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .feedback__text {
@@ -17,4 +25,55 @@
   color: var(--gray);
   text-transform: uppercase;
   text-align: center;
+}
+
+.feedback__user-container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.feedback__fieldset-user {
+  @media (min-width: $tablet-width) {
+    margin-inline-end: 100px;
+  }
+}
+
+.feedback__items {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.feedback__button-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.feedback__submit {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+  }
+}
+
+.feedback__required {
+  display: block;
+  font-size: 12px;
+  color: var(--gray-rgba);
+  text-transform: uppercase;
+  text-align: right;
+}
+
+.feedback__textarea {
+  @media (min-width: $tablet-width) {
+    max-width: 768px;
+    margin-inline: auto;
+  }
 }

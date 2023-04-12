@@ -14,14 +14,6 @@
     line-height: 26px;
     font-weight: 700;
   }
-
-  &--large {
-    margin-bottom: 20px;
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: 700;
-    text-align: center;
-  }
 }
 
 .field__input,
@@ -38,16 +30,8 @@
 
 .field__textarea {
   min-height: 150px;
-}
 
-.field__button {
-  width: 100%;
-}
-
-.field__span {
-  display: block;
-  font-size: 12px;
-  color: var(--gray-rgba);
-  text-transform: uppercase;
-  text-align: right;
+  @media (min-width: $desktop-width) {
+    max-width: 768px;
+  }
 }
