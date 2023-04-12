@@ -1,6 +1,17 @@
 .presentation {
+  position: relative;
   padding-block-start: 17px;
   padding-inline: 20px;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    height: 1px;
+    width: 100vw;
+    background-color: var(--gray-border);
+  }
 }
 
 .presentation__title {

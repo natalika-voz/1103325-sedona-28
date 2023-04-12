@@ -1,5 +1,19 @@
 .contacts {
+  position: relative;
+  margin-inline: 0;
   padding-block: 24px 34px;
+  padding-inline: 0;
+  border: none;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: -20px;
+    content: "";
+    height: 1px;
+    width: 100vw;
+    background-color: var(--gray-border);
+  }
 }
 
 .contacts__title {

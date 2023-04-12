@@ -1,7 +1,18 @@
 .fieldset {
+  position: relative;
   margin-inline: 0;
   padding: 0;
   border: none;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: -20px;
+    content: "";
+    height: 1px;
+    width: 100vw;
+    background-color: var(--gray-border);
+  }
 }
 
 .fieldset__legend {

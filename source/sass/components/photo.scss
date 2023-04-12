@@ -1,5 +1,16 @@
 .photo {
+  position: relative;
   padding-block-start: 24px;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: -20px;
+    content: "";
+    height: 1px;
+    width: 100vw;
+    background-color: var(--gray-border);
+  }
 
   @media (min-width: $tablet-width) {
     padding-block-start: 0;
