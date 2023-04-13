@@ -9,6 +9,7 @@
   background-position: center;
   background-color: var(--white);
   background-image: url("../img/icon-menu.svg");
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     display: none;
