@@ -12,12 +12,23 @@
 }
 
 .nav__list {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   margin-block: 0;
   padding-inline-start: 0;
   list-style: none;
+
+  &::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    height: 7px;
+    width: 100%;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+  }
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -46,6 +57,11 @@
   text-transform: uppercase;
   color: var(--white);
   background-color: var(--blue);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+  &:not(:last-child) {
+    border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+  }
 
   @media (min-width: $tablet-width) {
     padding-block: 12px;
