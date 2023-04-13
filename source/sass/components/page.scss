@@ -1,3 +1,22 @@
+.page {
+  height: 100%;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: "PT Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-size-adjust: 100%;
+}
+
+.page__body {
+  min-height: 100%;
+  margin: 0;
+  color: var(--black);
+  background-color: var(--white);
+}
+
 .page--mobile-menu {
   & .nav {
     display: block;
