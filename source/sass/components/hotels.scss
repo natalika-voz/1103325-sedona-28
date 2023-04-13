@@ -1,6 +1,10 @@
 .hotels {
   padding-block: 39px 49px;
   padding-inline: 18px;
+
+  @media (min-width: $tablet-width) {
+    padding-block-start: 60px;
+  }
 }
 
 .hotels__offer {
@@ -17,6 +21,11 @@
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    margin-block-end: 32px;
+  }
 }
 
 .hotels__text {
@@ -24,6 +33,10 @@
   color: var(--gray);
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-block-end: 45px;
+  }
 }
 
 .hotels__button {

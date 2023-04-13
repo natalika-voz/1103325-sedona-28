@@ -42,6 +42,16 @@
   @media (min-width: $tablet-width) {
     padding-inline: 33px;
     padding-block: 53px 30px;
+
+    &--gray {
+      padding-block-start: 42px;
+      padding-block-end: 42px;
+      padding-inline: 26px;
+    }
+
+    &--road {
+      padding-inline: 25px;
+    }
   }
 }
 
@@ -63,7 +73,6 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    width: 190px;
     font-size: 21px;
   }
 
