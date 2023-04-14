@@ -31,8 +31,13 @@
   }
 
   @media (min-width: $tablet-width) {
+    position: static;
     flex-direction: row;
     height: 100%;
+
+    &::before {
+      content: none;
+    }
   }
 }
 
