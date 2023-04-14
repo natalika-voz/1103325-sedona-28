@@ -9,7 +9,7 @@
     content: "";
     height: 1px;
     width: 100vw;
-    background-color: var(--gray-border);
+    background-color: var(--gray);
   }
 
   @media (min-width: $tablet-width) {
@@ -47,7 +47,7 @@
 
 .photo__footer {
   @media (min-width: $tablet-width) {
-    background-color: var(--light-gray);
+    background-color: var(--gray-200);
   }
 }
 
@@ -60,5 +60,5 @@
 
 .photo__autor {
   margin-block: 0 11px;
-  color: var(--gray);
+  color: var(--black-100);
 }

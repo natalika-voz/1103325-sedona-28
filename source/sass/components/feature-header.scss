@@ -9,7 +9,7 @@
     position: relative;
     padding-inline-start: 18px;
     padding-block: 25px;
-    background-color: var(--light-gray);
+    background-color: var(--gray-200);
     color: var(--black);
 
     &::before {
@@ -19,7 +19,7 @@
       content: "";
       width: calc(100% - 36px);
       height: 1px;
-      background-color: var(--gray-dark);
+      background-color: var(--gray-100);
     }
 
     &:last-child::before {

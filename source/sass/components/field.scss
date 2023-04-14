@@ -5,7 +5,7 @@
 }
 
 .field__label {
-  color: var(--gray);
+  color: var(--black-100);
   text-transform: uppercase;
 
   &--bold {
@@ -24,8 +24,12 @@
   font-weight: 700;
   line-height: 26px;
   border: none;
-  background-color: var(--light-gray);
+  background-color: var(--gray-200);
   resize: vertical;
+
+  &::placeholder {
+    color: #0000004d;
+  }
 }
 
 .field__textarea {
