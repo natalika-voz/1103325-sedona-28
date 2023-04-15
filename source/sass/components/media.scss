@@ -34,3 +34,45 @@
     margin-block-end: 67px;
   }
 }
+
+.media__list {
+  list-style: none;
+  margin-block: 0;
+  padding-inline-start: 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.media__list-item {
+  position: relative;
+  padding-block-start: 24px;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: -20px;
+    content: "";
+    height: 1px;
+    width: 100vw;
+    background-color: var(--gray);
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-block-start: 0;
+
+    &::before {
+      content: none;
+    }
+
+    &:first-child {
+      grid-column: 1/-1;
+    }
+  }
+}

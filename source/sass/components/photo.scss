@@ -1,43 +1,8 @@
 .photo {
-  position: relative;
-  padding-block-start: 24px;
-
-  &::before {
-    position: absolute;
-    top: 0;
-    left: -20px;
-    content: "";
-    height: 1px;
-    width: 100vw;
-    background-color: var(--gray);
-  }
-
-  @media (min-width: $tablet-width) {
-    padding-block-start: 0;
-
-    &:first-child {
-      grid-area: f;
-    }
-
-    &:nth-child(2) {
-      grid-area: l;
-    }
-
-    &:nth-child(3) {
-      grid-area: r;
-    }
-
-    &:nth-child(4) {
-      grid-area: d;
-    }
-  }
-}
-
-.photo__item {
   margin: 0;
 }
 
-.photo__item-link {
+.photo__link {
   display: block;
 }
 
