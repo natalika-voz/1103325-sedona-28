@@ -43,6 +43,8 @@
 
 .photo__image {
   display: block;
+  width: 100%;
+  object-fit: cover;
 }
 
 .photo__footer {
@@ -61,4 +63,10 @@
 .photo__autor {
   margin-block: 0 11px;
   color: var(--black-100);
+}
+
+.photo__wrapper {
+  @media (min-width: $tablet-width) {
+
+  }
 }

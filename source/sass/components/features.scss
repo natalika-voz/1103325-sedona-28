@@ -4,34 +4,18 @@
   list-style: none;
 
   @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-areas:
-      "c c c"
-      "c c c"
-      "b b b"
-      "s r t";
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
 .features__item {
-  &:first-child {
-    grid-area: c;
+  &--bridge {
+    width: 100%;
   }
 
-  &:nth-child(2) {
-    grid-area: b;
-  }
-
-  &:nth-child(3) {
-    grid-area: s;
-  }
-
-  &:nth-child(4) {
-    grid-area: r;
-  }
-
-  &:nth-child(5) {
-    grid-area: t;
+  &--small {
+    width: calc(100% / 3);
   }
 }
 
