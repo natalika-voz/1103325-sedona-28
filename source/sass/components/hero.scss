@@ -19,7 +19,7 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    width: 520px;
+    min-width: 520px;
     font-size: 21px;
     line-height: 26px;
     margin-block-end: 29px;
