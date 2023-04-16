@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html class="page page--mobile-menu" lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="preload" href="/fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="./css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
@@ -27,10 +29,11 @@
             <li class="nav__item">
               <a class="nav__link" href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
             </li>
+            <li class="nav__item nav__item--menu" role="none">
+              <button class="toggle-menu" type="button" aria-label="Меню" aria-expanded="true"></button>
+            </li>
           </ul>
         </nav>
-
-        <button class="toggle-menu" type="button" aria-label="Меню" aria-expanded="true"></button>
       </header>
 
       <main class="main">

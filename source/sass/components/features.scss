@@ -14,8 +14,10 @@
     width: 100%;
   }
 
-  &--small {
-    width: calc(100% / 3);
+  @media (min-width: $tablet-width) {
+    &--small {
+      width: calc(100% / 3);
+    }
   }
 }
 

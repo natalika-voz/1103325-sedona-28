@@ -1,7 +1,12 @@
-const html = document.querySelector('.page');
-const mobileMenuToggleButton = html.querySelector('.toggle-menu');
+const mobileMenuToggleButton = document.querySelector('.toggle-menu');
+const nav = document.querySelector('.nav');
 
 mobileMenuToggleButton?.addEventListener('click', () => {
-  html.classList.toggle('page--mobile-menu');
-  mobileMenuToggleButton.ariaExpanded = html.classList.contains('page--mobile-menu');
+  nav.classList.toggle('nav--opened');
+
+  if (nav.classList.contains('nav--opened')) {
+    mobileMenuToggleButton.ariaExpanded = true;
+  } else {
+    mobileMenuToggleButton.ariaExpanded = false;
+  }
 });
