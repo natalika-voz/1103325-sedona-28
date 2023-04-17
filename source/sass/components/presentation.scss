@@ -12,6 +12,12 @@
     width: 100vw;
     background-color: var(--gray);
   }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      content: none;
+    }
+  }
 }
 
 .presentation__title {

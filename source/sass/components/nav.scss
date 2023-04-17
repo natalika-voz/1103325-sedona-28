@@ -65,7 +65,12 @@
     right: 12px;
   }
 
+  &:nth-last-child(2) .nav__link {
+    border-bottom: none;
+  }
+
   @media (min-width: $tablet-width) {
+    display: block;
     width: 20%;
 
     &:nth-child(4n - 1) {
@@ -86,10 +91,8 @@
   color: var(--white);
   background-color: var(--blue);
   border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(1, 1, 1, 0.2);
 
-  &:not(:last-child) {
-    border-bottom: 1px solid rgba(1, 1, 1, 0.2);
-  }
 
   @media (min-width: $tablet-width) {
     padding-block: 12px;
@@ -100,6 +103,15 @@
 
     &--active {
       color: var(--brown);
+    }
+
+    &:hover {
+      color: var(--blue);
+    }
+
+    &:active {
+      color: var(--black);
+      opacity: 0.3;
     }
   }
 }
