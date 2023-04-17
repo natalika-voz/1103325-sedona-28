@@ -2,11 +2,15 @@
   display: inline-flex;
   min-width: 61px;
   height: 26px;
-  padding-inline-start: 24px;
+  padding-inline-start: 37px;
   font-weight: 700;
   border: none;
   background-image: url("../img/catalog/like-icon.svg");
   background-repeat: no-repeat;
   background-position: top 0 left 0;
   background-color: transparent;
+
+  @media (min-width: $desktop-width) {
+    color: var(--white);
+  }
 }

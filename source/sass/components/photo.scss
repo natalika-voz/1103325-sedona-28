@@ -1,5 +1,9 @@
 .photo {
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
 }
 
 .photo__link {
@@ -14,9 +18,32 @@
 
 .photo__footer {
   @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
     padding-inline: 20px;
     padding-block: 22px 15px;
     background-color: var(--gray-200);
+
+    &--road {
+      background-color: var(--gray-400);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    color: var(--white);
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.photo__footer-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -30,4 +57,8 @@
 .photo__autor {
   margin-block: 0 11px;
   color: var(--black-100);
+
+  @media (min-width: $desktop-width) {
+    color: var(--white);
+  }
 }
