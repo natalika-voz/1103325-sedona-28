@@ -48,6 +48,7 @@
     position: static;
     flex-direction: row;
     height: 100%;
+    background-image: none;
 
     &::before {
       content: none;
@@ -100,6 +101,7 @@
     font-size: 14px;
     line-height: 21px;
     color: var(--black);
+    border: none;
 
     &--active {
       color: var(--brown);
