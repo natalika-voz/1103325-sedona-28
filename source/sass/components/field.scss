@@ -5,7 +5,7 @@
 }
 
 .field__label {
-  color: var(--gray);
+  color: var(--black-100);
   text-transform: uppercase;
 
   &--bold {
@@ -13,14 +13,6 @@
     font-size: 18px;
     line-height: 26px;
     font-weight: 700;
-  }
-
-  &--large {
-    margin-bottom: 20px;
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: 700;
-    text-align: center;
   }
 }
 
@@ -32,22 +24,18 @@
   font-weight: 700;
   line-height: 26px;
   border: none;
-  background-color: var(--light-gray);
+  background-color: var(--gray-200);
   resize: vertical;
+
+  &::placeholder {
+    color: #0000004d;
+  }
 }
 
 .field__textarea {
   min-height: 150px;
-}
 
-.field__button {
-  width: 100%;
-}
-
-.field__span {
-  display: block;
-  font-size: 12px;
-  color: var(--gray-rgba);
-  text-transform: uppercase;
-  text-align: right;
+  @media (min-width: $desktop-width) {
+    max-width: 768px;
+  }
 }

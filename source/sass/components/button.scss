@@ -13,4 +13,17 @@
   background-color: var(--blue);
   border: none;
   text-transform: uppercase;
+
+  &:hover {
+    background-color: var(--blue-100);
+  }
+
+  &:active {
+    background-color: var(--blue-200);
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: var(--gray);
+  }
 }

@@ -1,6 +1,19 @@
 .modal {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
   &--error {
     padding: 45px 41px 35px;
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 640px;
+    padding: 50px 46px 49px;
+
+    &--error {
+      max-width: 400px;
+    }
   }
 }
 
@@ -11,17 +24,37 @@
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
-  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+  }
 }
 
 .modal__text {
   margin-block: 0 28px;
-  color: var(--gray);
+  color: var(--black-100);
   text-transform: uppercase;
-  text-align: center;
 }
 
 .modal__footer {
   padding: 20px;
-  background-color: var(--light-gray);
+  background-color: var(--gray-200);
+}
+
+.modal__button {
+  width: 100%;
+  margin-inline: auto;
+
+  &--small {
+    width: 180px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 458px;
+
+    &--small {
+      width: 272px;
+    }
+  }
 }

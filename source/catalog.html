@@ -1,34 +1,39 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="preload" href="/fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="./css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
-  <body class="page">
+  <body class="page__body">
     <div class="container">
       <header class="main-header">
-        <a class="main-header__link" href="./index.html">
-          <img class="main-header__logo" src="./img/logo.svg" width="185" height="96" alt="Логотип сайта Седона">
+        <a class="main-header__logo" href="./index.html">
+          <img class="main-header__logo-image" src="./img/logo.svg" width="185" height="96" alt="Логотип сайта Седона">
         </a>
+
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link button" href="./index.html">Главная</a>
+              <a class="nav__link" href="./index.html">Главная</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link nav__link--active button" href="./catalog.html">Фото и видео</a>
+              <a class="nav__link nav__link--active" href="#">Фото и видео</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link button" href="./form.html">Форма отзыва</a>
+              <a class="nav__link" href="./form.html">Форма отзыва</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link button" href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
+              <a class="nav__link" href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
+            </li>
+            <li class="nav__item nav__item--menu" role="none">
+              <button class="toggle-menu" type="button" aria-label="Меню" aria-expanded="true"></button>
             </li>
           </ul>
         </nav>
-        <button class="toggle-menu toggle-menu--opened" type="button" aria-label="Меню" aria-expanded="true"></button>
       </header>
 
       <main class="main">
@@ -38,46 +43,54 @@
         <section class="media">
           <h1 class="media__title">Фото и видео</h1>
           <p class="media__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике</p>
-          <ul class="photos">
-            <li class="photo">
-              <figure class="photo__item">
-                <a href="#">
+          <ul class="media__list">
+            <li class="media__list-item">
+              <article class="photo">
+                <a class="photo__link" href="#">
                   <img class="photo__image" src="./img/catalog/photo-1-m.jpg" width="280" height="280" alt="Изображение фотографии народные просторы">
                 </a>
-                <figcaption class="photo__description">Народные просторы</figcaption>
-              </figure>
-              <p class="photo__autor">Автор фото: Борис</p>
-              <span class="reaction">1350</span>
+                <div class="photo__footer">
+                  <h3 class="photo__description">Народные просторы</h3>
+                  <p class="photo__autor">Автор фото: Борис</p>
+                  <button class="reaction">1350</button>
+                </div>
+              </article>
             </li>
-            <li class="photo">
-              <figure class="photo__item">
-                <a href="#">
+            <li class="media__list-item">
+              <article class="photo">
+                <a class="photo__link" href="#">
                   <img class="photo__image" src="./img/catalog/photo-2-m.jpg" width="280" height="280" alt="Изображение фотографии местная растительность">
                 </a>
-                <figcaption class="photo__description">Местная растительность</figcaption>
-              </figure>
-              <p class="photo__autor">Автор фото: Сергей</p>
-              <span class="reaction">143</span>
+                <div class="photo__footer">
+                  <h3 class="photo__description">Местная растительность</h3>
+                  <p class="photo__autor">Автор фото: Сергей</p>
+                  <button class="reaction">143</button>
+                </div>
+              </article>
             </li>
-            <li class="photo">
-              <figure class="photo__item">
-                <a href="#">
+            <li class="media__list-item">
+              <article class="photo">
+                <a class="photo__link" href="#">
                   <img class="photo__image" src="./img/catalog/photo-3-m.jpg" width="280" height="280" alt="Изображение фотографии дорога на север">
                 </a>
-                <figcaption class="photo__description">Дорога на север</figcaption>
-              </figure>
-              <p class="photo__autor">Автор фото: Петр</p>
-              <span class="reaction">96</span>
+                <div class="photo__footer">
+                  <h3 class="photo__description">Дорога на север</h3>
+                  <p class="photo__autor">Автор фото: Петр</p>
+                  <button class="reaction">96</button>
+                </div>
+              </article>
             </li>
-            <li class="photo">
-              <figure class="photo__item">
-                <a href="#">
+            <li class="media__list-item">
+              <article class="photo">
+                <a class="photo__link" href="#">
                   <img class="photo__image" src="./img/catalog/photo-4-m.jpg" width="280" height="280" alt="Изображение фотографии мост дьявола">
                 </a>
-                <figcaption class="photo__description">Мост дьявола</figcaption>
-              </figure>
-              <p class="photo__autor">Автор фото: Антон</p>
-              <span class="reaction">254</span>
+                <div class="photo__footer">
+                  <h3 class="photo__description">Мост дьявола</h3>
+                  <p class="photo__autor">Автор фото: Антон</p>
+                  <button class="reaction">254</button>
+                </div>
+              </article>
             </li>
           </ul>
         </section>
@@ -96,19 +109,22 @@
         <b class="main-footer__text">#visitsedona</b>
         <ul class="social">
           <li class="social__item">
-            <a class="social__link" href="https://vk.com/htmlacademy"><span class="visually-hidden">Вконтакте</span></a>
+            <a class="social__link" href="https://vk.com/htmlacademy" target="_blank"><span class="visually-hidden">Вконтакте</span></a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="https://t.me/htmlacademy"><span class="visually-hidden">Телеграм</span></a>
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy" target="_blank"><span class="visually-hidden">Телеграм</span></a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">Ютуб</span></a>
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank"><span class="visually-hidden">Ютуб</span></a>
           </li>
         </ul>
-        <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">Разработано
-          <img class="copyright__image" src="./img/htmlacademy.svg" width="27" height="35" alt="Логотип html академии">
+        <a class="main-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">Разработано
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.1506 2.25H18.0502L4.5 3.58944V27.221L18.0502 34.875L31.5 27.221V3.58944L18.1506 2.25ZM29.5929 13.8266L18.0502 7.32075V7.22507H17.9498L17.8494 7.1294V7.22507L6.40706 13.8266V5.21591L17.9498 4.06782L29.5929 5.21591V13.8266ZM17.9498 8.75587L29.4926 15.1661L24.9758 17.6536L17.8494 13.6353V14.9747L23.7714 18.3233L22.868 18.8017L17.8494 15.9315V17.2709L21.6636 19.4714L20.8606 19.9498L17.8494 18.2276V19.5671L19.7565 20.6195L17.9498 21.6719L6.50743 15.2617L17.9498 8.75587ZM6.40706 16.6968L17.8494 23.2027V24.1595L9.92007 19.6628V21.0022L17.9498 25.5946V26.647L9.92007 22.1503V23.4897L17.9498 28.0821L26.0799 23.3941V18.419L29.4926 16.5055V26.0729L17.9498 32.6745L6.40706 26.1686V16.6968Z" fill="currentColor"/>
+          </svg>
         </a>
       </footer>
     </div>
+    <script src="./js/index.js"></script>
   </body>
 </html>

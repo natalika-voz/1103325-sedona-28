@@ -1,30 +1,47 @@
 .city-list {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   row-gap: 25px;
   padding-block: 23px 46px;
   padding-inline: 18px;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    min-height: 330px;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-block-start: 0;
+    padding-inline: 0;
+  }
 }
 
 .city-list__item {
   display: flex;
   flex-direction: column;
   row-gap: 16px;
+  padding-block-start: 8px;
   padding-inline-start: 47px;
-  background-image: url("../img/icon-house.svg");
+  background-image: url("../img/index/icon-house.svg");
+  background-size: 40px;
   background-repeat: no-repeat;
 
   &--food {
-    background-image: url("../img/icon-burger.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
+    background-image: url("../img/index/icon-burger.svg");
   }
 
   &--souvenirs {
-    background-image: url("../img/icon-gift.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
+    background-image: url("../img/index/icon-gift.svg");
+  }
+
+  @media (min-width: $tablet-width) {
+    row-gap: 22px;
+    padding-inline: 33px;
+    padding-block-start: 158px;
+    background-size: 77px 72px;
+    background-position: center 60px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-size: 81px 73px;
   }
 }
 
@@ -33,11 +50,15 @@
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .city-list__item-text {
   margin-block-start: 0;
   margin-block-end: 0;
-  color: var(--gray);
+  color: var(--black-100);
   text-transform: uppercase;
 }

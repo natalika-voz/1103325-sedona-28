@@ -1,15 +1,57 @@
 .feature-header {
   padding-inline: 18px;
-  padding-block: 33px 40px;
+  padding-block: 71px 40px;
   background-color: var(--blue);
   color: var(--white);
   text-transform: uppercase;
 
   &--gray {
+    position: relative;
     padding-inline-start: 18px;
-    padding-block: 24px;
-    background-color: var(--light-gray);
+    padding-block: 25px;
+    background-color: var(--gray-200);
     color: var(--black);
+
+    &::before {
+      position: absolute;
+      bottom: 0;
+      left: 18px;
+      content: "";
+      width: calc(100% - 36px);
+      height: 1px;
+      background-color: var(--gray-100);
+    }
+
+    &:last-child::before {
+      content: none;
+    }
+  }
+
+  &--road {
+    padding-block: 24px 25px;
+  }
+
+  &--tourists {
+    padding-block: 24px 28px;
+  }
+
+  &--bridge {
+    padding-block: 38px 36px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-inline: 33px;
+    padding-block: 53px 30px;
+
+    &--gray {
+      padding-block-start: 42px;
+      padding-block-end: 42px;
+      padding-inline: 26px;
+    }
+
+    &--road {
+      padding-inline: 25px;
+    }
   }
 }
 
@@ -29,15 +71,29 @@
   font-weight: 700;
   line-height: 26px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .feature-header__number {
   display: block;
   margin-block-end: 17px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-block-end: 25px;
+  }
 }
 
 .feature-header__text {
+  max-width: 264px;
+  margin-inline: auto;
   margin-block: 0;
   text-align: center;
+
+  &--small {
+    max-width: 255px;
+  }
 }

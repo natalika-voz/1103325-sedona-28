@@ -1,19 +1,34 @@
 .hero {
   padding-block: 32px 16px;
+  padding-inline: 18px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 206px;
+    padding-block-start: 48px;
+  }
 }
 
 .hero__title {
+  width: 264px;
+  margin-inline: auto;
   margin-block: 0 35px;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    min-width: 520px;
+    font-size: 21px;
+    line-height: 26px;
+    margin-block-end: 29px;
+  }
 }
 
 .hero__text {
   margin-block: 0;
-  color: var(--gray);
+  color: var(--black-100);
   text-transform: uppercase;
   text-align: center;
 }

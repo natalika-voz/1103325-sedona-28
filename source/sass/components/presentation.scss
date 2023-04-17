@@ -1,5 +1,23 @@
 .presentation {
+  position: relative;
   padding-block-start: 17px;
+  padding-inline: 20px;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    height: 1px;
+    width: 100vw;
+    background-color: var(--gray);
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      content: none;
+    }
+  }
 }
 
 .presentation__title {
@@ -9,11 +27,26 @@
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .presentation__text {
   margin-block: 0 40px;
-  color: var(--gray);
+  color: var(--black-100);
   text-transform: uppercase;
   text-align: center;
+}
+
+.presentation__preview {
+  position: relative;
+}
+
+
+.presentation__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }
