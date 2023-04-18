@@ -1,4 +1,5 @@
 .field {
+  position: relative;
   display: flex;
   flex-direction: column;
   margin-block-end: 16px;
@@ -7,12 +8,51 @@
 .field__label {
   color: var(--black-100);
   text-transform: uppercase;
+  cursor: pointer;
 
   &--bold {
+    position: relative;
+    padding-inline-start: 65px;
+    margin-block-end: 16px;
     text-transform: none;
     font-size: 18px;
     line-height: 26px;
     font-weight: 700;
+  }
+
+  &--radio::before {
+    content: "";
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    background-color: var(--gray-200);
+    border-radius: 50%;
+    top: -8px;
+    left: 0;
+  }
+
+  &--radio-checked::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: var(--black-100);
+    border-radius: 50%;
+    top: 7px;
+    left: 15px;
+  }
+
+  &--checkbox::before {
+    content: "";
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    background-repeat: no-repeat;
+    background-position: top 12px left 12px;
+    background-color: var(--gray-200);
+    border-radius: 4px;
+    top: -10px;
+    left: 0;
   }
 }
 
@@ -30,6 +70,25 @@
   &::placeholder {
     color: #0000004d;
   }
+
+  &--icon {
+    padding-right: 65px;
+  }
+}
+
+.field__checkbox:checked + .field__label--checkbox::before {
+  background-image: url("../img/form/tick.svg");
+}
+
+.field__radio:checked + .field__label--radio::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: var(--black-100);
+  border-radius: 50%;
+  top: 7px;
+  left: 15px;
 }
 
 .field__textarea {
@@ -37,5 +96,22 @@
 
   @media (min-width: $desktop-width) {
     max-width: 768px;
+  }
+}
+
+.field__icon {
+  position: absolute;
+  top: 21px;
+  right: 0;
+  display: block;
+  width: 58px;
+  height: 58px;
+  background-color: var(--gray-500);
+  background-image: url("../img/form/phone.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--mail {
+    background-image: url("../img/form/mail.svg");
   }
 }
