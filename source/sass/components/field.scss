@@ -31,16 +31,16 @@
     left: 0;
   }
 
-  &--radio-checked::after {
-    content: "";
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    background-color: var(--black-100);
-    border-radius: 50%;
-    top: 7px;
-    left: 15px;
-  }
+  // &--radio-checked::after {
+  //   content: "";
+  //   position: absolute;
+  //   width: 16px;
+  //   height: 16px;
+  //   background-color: var(--black-100);
+  //   border-radius: 50%;
+  //   top: 7px;
+  //   left: 15px;
+  // }
 
   &--checkbox::before {
     content: "";
