@@ -4,6 +4,18 @@
   left: 0;
   width: 100%;
 
+  &--nojs {
+    position: static;
+
+    & .nav__item {
+      display: block;
+    }
+
+    & .nav__item--menu {
+      display: none;
+    }
+  }
+
   &--opened {
     .nav__list::before {
       content: "";

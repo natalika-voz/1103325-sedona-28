@@ -2,11 +2,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 390px;
+  min-height: 389px;
   background-image: url("../img/sedona-image/back-mobile.jpg");
   background-color: var(--blue);
   background-repeat: no-repeat;
-  background-position: top 0 right 0;
+  background-position: center;
 
   @media (min-width: $tablet-width) {
     background-size: cover;

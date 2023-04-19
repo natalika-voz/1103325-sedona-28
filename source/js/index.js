@@ -1,6 +1,8 @@
 const mobileMenuToggleButton = document.querySelector('.toggle-menu');
 const nav = document.querySelector('.nav');
 
+nav?.classList.remove('nav--nojs');
+
 mobileMenuToggleButton?.addEventListener('click', () => {
   nav.classList.toggle('nav--opened');
 

@@ -25,12 +25,16 @@
   @media (min-width: $tablet-width) {
     min-height: 256px;
     display: grid;
-    grid-template-columns: 256px 1fr;
+    grid-template-columns: min(33%, 400px) 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 400px 1fr;
   }
 }
 
 .features__item-top--bridge {
-  grid-template-columns: 1fr 256px;
+  grid-template-columns: 1fr min(33%, 400px);
 
   & .features__image {
     order: -1;
