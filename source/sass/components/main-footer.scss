@@ -3,7 +3,7 @@
   gap: 30px;
   justify-content: center;
   justify-items: center;
-  padding-block: 36px 40px;
+  padding-block: 41px 40px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(3, auto);
@@ -33,6 +33,6 @@
   }
 
   & svg {
-    margin-inline-start: 4px;
+    margin-inline-start: 8px;
   }
 }
