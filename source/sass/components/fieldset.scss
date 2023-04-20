@@ -2,21 +2,31 @@
   position: relative;
   padding-block-start: 24px;
 
-  // &::before {
-  //   position: absolute;
-  //   top: -60px;
-  //   left: -20px;
-  //   content: "";
-  //   height: 1px;
-  //   width: 100vw;
-  //   background-color: var(--gray);
-  // }
+  &::before {
+    position: absolute;
+    top: 0;
+    left: -20px;
+    content: "";
+    height: 1px;
+    width: 100vw;
+    background-color: var(--gray);
+  }
 
-  &--visited-sights {
+  @media (min-width: $tablet-width) {
     &::before {
-      top: -80px;
+      content: none;
     }
   }
+
+  &--visited-sights {
+    padding-block-end: 24px;
+  }
+
+  // &--visited-sights {
+  //   &::before {
+  //     top: -80px;
+  //   }
+  // }
 }
 
 .fieldset__legend {

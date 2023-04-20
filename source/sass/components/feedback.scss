@@ -35,10 +35,21 @@
 }
 
 .feedback__fieldset-user {
+  padding-block-end: 39px;
+
   @media (min-width: $tablet-width) {
     margin-inline-end: 100px;
   }
 }
+
+.feedback__fieldset-contact {
+  padding-block-end: 34px;
+}
+
+.feedback__fieldset-impression {
+  padding-block-end: 24px;
+}
+
 
 .feedback__items {
   @media (min-width: $tablet-width) {
