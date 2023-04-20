@@ -4,9 +4,12 @@
   background-color: var(--blue);
   color: var(--white);
   text-transform: uppercase;
-  background-image: url("../img/white-mask.svg");
-  background-repeat: no-repeat;
-  background-position: top 0 center;
+
+  &--real-town {
+    background-image: url("../img/white-mask.svg");
+    background-repeat: no-repeat;
+    background-position: top 0 center;
+  }
 
   &--gray {
     position: relative;

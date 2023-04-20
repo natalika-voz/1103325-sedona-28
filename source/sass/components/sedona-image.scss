@@ -7,14 +7,17 @@
   background-color: var(--blue);
   background-repeat: no-repeat;
   background-position: bottom 0 center, center;
+  background-size: auto, cover;
 
   @media (min-width: $tablet-width) {
-    background-size: auto, cover;
     min-height: 518px;
   }
 }
 
-.sedona-image--catalog {
-  background-image: url("../img/sedona-image/back-mobile.jpg");
+.sedona-image--small {
   min-height: 158px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 341px;
+  }
 }
