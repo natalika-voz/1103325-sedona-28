@@ -54,6 +54,10 @@
       padding-block-start: 42px;
       padding-block-end: 42px;
       padding-inline: 26px;
+
+      &::before {
+        content: none;
+      }
     }
 
     &--road {
