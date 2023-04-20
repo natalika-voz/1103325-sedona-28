@@ -3,13 +3,13 @@
   justify-content: center;
   align-items: center;
   min-height: 389px;
-  background-image: url("../img/sedona-image/back-mobile.jpg");
+  background-image: url("../img/intro-triangle.svg"), url("../img/sedona-image/back-mobile.jpg");
   background-color: var(--blue);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom 0 center, center;
 
   @media (min-width: $tablet-width) {
-    background-size: cover;
+    background-size: auto, cover;
     min-height: 518px;
   }
 }
