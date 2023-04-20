@@ -17,6 +17,8 @@
 }
 
 .photo__footer {
+  padding-block: 15px 25px;
+
   @media (min-width: $tablet-width) {
     position: absolute;
     bottom: 0;
@@ -57,6 +59,10 @@
 .photo__autor {
   margin-block: 0 11px;
   color: var(--black-100);
+
+  @media (min-width: $tablet-width) {
+    margin-block-end: 0;
+  }
 
   @media (min-width: $desktop-width) {
     color: var(--white);
