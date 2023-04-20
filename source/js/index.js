@@ -1,14 +1,14 @@
-const mobileMenuToggleButton = document.querySelector('.toggle-menu');
+const toggleMenu = document.querySelector('.toggle-menu');
 const nav = document.querySelector('.nav');
 
 nav?.classList.remove('nav--nojs');
 
-mobileMenuToggleButton?.addEventListener('click', () => {
+toggleMenu?.addEventListener('click', () => {
   nav.classList.toggle('nav--opened');
 
   if (nav.classList.contains('nav--opened')) {
-    mobileMenuToggleButton.ariaExpanded = true;
+    toggleMenu.ariaExpanded = true;
   } else {
-    mobileMenuToggleButton.ariaExpanded = false;
+    toggleMenu.ariaExpanded = false;
   }
 });

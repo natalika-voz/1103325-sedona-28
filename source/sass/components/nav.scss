@@ -32,7 +32,6 @@
   }
 
   @media (min-width: $tablet-width) {
-    height: 100%;
     position: static;
   }
 }
@@ -59,7 +58,6 @@
   @media (min-width: $tablet-width) {
     position: static;
     flex-direction: row;
-    height: 100%;
     background-image: none;
 
     &::before {
@@ -94,6 +92,7 @@
 
 .nav__link {
   display: flex;
+  align-items: center;
   justify-content: center;
   padding-inline: 20px;
   padding-block: 17px 12px;
@@ -108,6 +107,7 @@
 
 
   @media (min-width: $tablet-width) {
+    min-height: 56px;
     padding-block: 12px;
     background-color: var(--white);
     font-size: 14px;
