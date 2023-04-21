@@ -1,13 +1,13 @@
 .main-header {
   position: relative;
-  min-height: 56px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding-inline: 13px;
+  margin-bottom: 56px;
 
   @media (min-width: $tablet-width) {
-    padding-inline: 0;
+    margin-bottom: 0;
+    min-height: 56px;
   }
 }
 
@@ -17,4 +17,10 @@
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+
+  @media (max-width: $mobile-width-only) {
+    bottom: 0;
+    top: auto;
+    transform: translateX(-50%) translateY(100%);
+  }
 }

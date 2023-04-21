@@ -5,6 +5,12 @@
   color: var(--white);
   text-transform: uppercase;
 
+  &--real-town {
+    background-image: url("../img/white-mask.svg");
+    background-repeat: no-repeat;
+    background-position: top 0 center;
+  }
+
   &--gray {
     position: relative;
     padding-inline-start: 18px;
@@ -42,11 +48,16 @@
   @media (min-width: $tablet-width) {
     padding-inline: 33px;
     padding-block: 53px 30px;
+    background-image: none;
 
     &--gray {
       padding-block-start: 42px;
       padding-block-end: 42px;
       padding-inline: 26px;
+
+      &::before {
+        content: none;
+      }
     }
 
     &--road {

@@ -2,19 +2,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 390px;
-  background-image: url("../img/sedona-image/back-mobile.jpg");
+  min-height: 389px;
+  background-image: url("../img/intro-triangle.svg"), url("../img/sedona-image/back-mobile.jpg");
   background-color: var(--blue);
   background-repeat: no-repeat;
-  background-position: top 0 right 0;
+  background-position: bottom 0 center, center;
+  background-size: auto, cover;
 
   @media (min-width: $tablet-width) {
-    background-size: cover;
     min-height: 518px;
   }
 }
 
-.sedona-image--catalog {
-  background-image: url("../img/sedona-image/back-mobile.jpg");
+.sedona-image--small {
   min-height: 158px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 341px;
+  }
 }

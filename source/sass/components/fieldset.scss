@@ -2,21 +2,31 @@
   position: relative;
   padding-block-start: 24px;
 
-  // &::before {
-  //   position: absolute;
-  //   top: -60px;
-  //   left: -20px;
-  //   content: "";
-  //   height: 1px;
-  //   width: 100vw;
-  //   background-color: var(--gray);
-  // }
+  &::before {
+    position: absolute;
+    top: 0;
+    left: -20px;
+    content: "";
+    height: 1px;
+    width: 100vw;
+    background-color: var(--gray);
+  }
 
-  &--visited-sights {
+  @media (min-width: $tablet-width) {
     &::before {
-      top: -80px;
+      content: none;
     }
   }
+
+  &--visited-sights {
+    padding-block-end: 24px;
+  }
+
+  // &--visited-sights {
+  //   &::before {
+  //     top: -80px;
+  //   }
+  // }
 }
 
 .fieldset__legend {
@@ -30,5 +40,43 @@
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
+
+    &--decor {
+      position: relative;
+      padding-inline: 130px;
+
+      &::before {
+        position: absolute;
+        content: "";
+        width: 123px;
+        height: 1px;
+        top: 50%;
+        left: 0;
+        background-color: var(--gray-600);
+        transform: translateY(-50%);
+      }
+
+      &::after {
+        position: absolute;
+        content: "";
+        width: 123px;
+        height: 1px;
+        top: 50%;
+        right: 0;
+        background-color: var(--gray-600);
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      width: 280px;
+    }
+
+    &::after {
+      width: 280px;
+    }
+
   }
 }

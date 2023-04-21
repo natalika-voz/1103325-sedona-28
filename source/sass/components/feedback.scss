@@ -29,21 +29,54 @@
 
 .feedback__user-container {
   @media (min-width: $tablet-width) {
+    position: relative;
     display: flex;
     justify-content: center;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 1px;
+      height: 338px;
+      top: 14px;
+      left: 47%;
+      background-color: var(--gray-600);
+    }
   }
 }
 
 .feedback__fieldset-user {
+  padding-block-end: 39px;
+
   @media (min-width: $tablet-width) {
     margin-inline-end: 100px;
   }
 }
 
+.feedback__fieldset-contact {
+  padding-block-end: 34px;
+}
+
+.feedback__fieldset-impression {
+  padding-block-end: 24px;
+}
+
+
 .feedback__items {
   @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    column-gap: 28px;
+
+    &--visited-sights {
+      column-gap: 64px;
+    }
   }
 }
 

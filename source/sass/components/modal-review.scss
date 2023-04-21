@@ -1,0 +1,29 @@
+.modal-review {
+  padding-block: 0;
+  padding-inline: 0;
+  max-width: 640px;
+}
+
+.modal-review__header {
+  padding-block: 39px;
+  padding-inline: 39px;
+}
+
+.modal-review__text {
+  margin-block-end: 0;
+}
+
+.modal-review__footer {
+  padding: 20px;
+  background-color: var(--gray-200);
+  align-self: stretch;
+
+  @media (min-width: $tablet-width) {
+    padding-block: 44px;
+    padding-inline: 90px;
+  }
+}
+
+.modal-review__button {
+  width: 100%;
+}

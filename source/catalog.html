@@ -15,7 +15,7 @@
           <img class="main-header__logo-image" src="./img/logo.svg" width="185" height="96" alt="Логотип сайта Седона">
         </a>
 
-        <nav class="nav">
+        <nav class="nav nav--nojs">
           <ul class="nav__list">
             <li class="nav__item">
               <a class="nav__link" href="./index.html">Главная</a>
@@ -37,7 +37,7 @@
       </header>
 
       <main class="main">
-        <div class="sedona-image sedona-image--catalog">
+        <div class="sedona-image sedona-image--small">
           <img class="sedona-image__text" src="./img/sedona-image/sedona-single.svg" width="229" height="39" alt="Седона">
         </div>
         <section class="media">
@@ -47,12 +47,14 @@
             <li class="media__list-item">
               <article class="photo">
                 <a class="photo__link" href="#">
-                  <img class="photo__image" src="./img/catalog/photo-1-m.jpg" width="280" height="280" alt="Изображение фотографии народные просторы">
+                  <img class="photo__image" src="./img/catalog/photo-1-m.jpg" width="280" height="280" alt="Изображение фотографии неродные просторы">
                 </a>
                 <div class="photo__footer">
-                  <h3 class="photo__description">Народные просторы</h3>
-                  <p class="photo__autor">Автор фото: Борис</p>
-                  <button class="reaction">1350</button>
+                  <div class="photo__footer-wrapper">
+                    <h3 class="photo__description">Неродные просторы</h3>
+                    <p class="photo__autor">Автор фото: Борис</p>
+                  </div>
+                  <span class="reaction">1350</span>
                 </div>
               </article>
             </li>
@@ -62,9 +64,11 @@
                   <img class="photo__image" src="./img/catalog/photo-2-m.jpg" width="280" height="280" alt="Изображение фотографии местная растительность">
                 </a>
                 <div class="photo__footer">
-                  <h3 class="photo__description">Местная растительность</h3>
-                  <p class="photo__autor">Автор фото: Сергей</p>
-                  <button class="reaction">143</button>
+                  <div class="photo__footer-wrapper">
+                    <h3 class="photo__description">Местная растительность</h3>
+                    <p class="photo__autor">Автор фото: Сергей</p>
+                  </div>
+                  <span class="reaction">143</span>
                 </div>
               </article>
             </li>
@@ -73,10 +77,12 @@
                 <a class="photo__link" href="#">
                   <img class="photo__image" src="./img/catalog/photo-3-m.jpg" width="280" height="280" alt="Изображение фотографии дорога на север">
                 </a>
-                <div class="photo__footer">
-                  <h3 class="photo__description">Дорога на север</h3>
-                  <p class="photo__autor">Автор фото: Петр</p>
-                  <button class="reaction">96</button>
+                <div class="photo__footer photo__footer--road">
+                  <div class="photo__footer-wrapper">
+                    <h3 class="photo__description">Дорога на север</h3>
+                    <p class="photo__autor">Автор фото: Петр</p>
+                  </div>
+                  <span class="reaction">96</span>
                 </div>
               </article>
             </li>
@@ -86,9 +92,11 @@
                   <img class="photo__image" src="./img/catalog/photo-4-m.jpg" width="280" height="280" alt="Изображение фотографии мост дьявола">
                 </a>
                 <div class="photo__footer">
-                  <h3 class="photo__description">Мост дьявола</h3>
-                  <p class="photo__autor">Автор фото: Антон</p>
-                  <button class="reaction">254</button>
+                  <div class="photo__footer-wrapper">
+                    <h3 class="photo__description">Мост дьявола</h3>
+                    <p class="photo__autor">Автор фото: Антон</p>
+                  </div>
+                  <span class="reaction">254</span>
                 </div>
               </article>
             </li>
@@ -96,7 +104,7 @@
         </section>
 
         <section class="presentation">
-          <h2 class="presentation__title">Все еще сомеваетесь?</h2>
+          <h2 class="presentation__title">Все еще сомневаетесь?</h2>
           <p class="presentation__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
           <div class="presentation__preview" href="#">
             <img class="presentation__image" src="./img/catalog/video-preview-m.jpg" alt="Изображение превью видео">
