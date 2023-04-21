@@ -79,7 +79,7 @@
 
 
             <div class="fieldset feedback__fieldset-impression">
-              <h2 class="fieldset__legend">Ваше общее впечатление:</h2>
+              <h2 class="fieldset__legend fieldset__legend--decor">Ваше общее впечатление:</h2>
               <div class="feedback__items">
                 <div class="field">
                   <input class="visually-hidden field__radio" type="radio" id="positive" name="impression" value="Скорее положительное" checked>
@@ -97,7 +97,7 @@
             </div>
 
             <div class="fieldset fieldset--visited-sights">
-              <h2 class="fieldset__legend">Посещенные достопримечательности:</h2>
+              <h2 class="fieldset__legend fieldset__legend--decor">Посещенные достопримечательности:</h2>
               <div class="feedback__items feedback__items--visited-sights">
                 <div class="field">
                   <input class="visually-hidden field__checkbox" type="checkbox" id="bridge" name="bridge">
@@ -119,7 +119,7 @@
             </div>
 
             <div class="fieldset feedback__textarea">
-              <h2 class="fieldset__legend" for="emotions">Опишите свои эмоции:</h2>
+              <h2 class="fieldset__legend fieldset__legend--decor" for="emotions">Опишите свои эмоции:</h2>
 
               <div class="field">
                 <label class="visually-hidden" for="emotions">Опишите подробно все свои восторги</label>
@@ -157,15 +157,15 @@
     </div>
 
     <div class="modal">
-      <div class="modal__error modal__error--closed">
+      <div class="modal__container modal__failure modal__failure--closed">
         <h2 class="modal__title">Что-то пошло не так!</h2>
         <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
         <button class="button modal__button modal__button--small" type="button">Ок</button>
       </div>
     </div>
 
-    <div class="modal">
-      <div class="modal__sent modal__sent--closed">
+    <!-- <div class="modal">
+      <div class="modal__success modal__success--closed">
         <h2 class="modal__title">Ваш отзыв отправлен!</h2>
         <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.
           В&nbsp;ближайшее время мы опубликуем его на сайте.</p>
@@ -173,7 +173,7 @@
           <button class="button modal__button modal__button--close" type="button">Закрыть окно</button>
         </div>
       </div>
-    </div>
+    </div> -->
     <script src="./js/index.js"></script>
   </body>
 </html>

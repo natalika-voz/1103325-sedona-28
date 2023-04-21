@@ -29,8 +29,19 @@
 
 .feedback__user-container {
   @media (min-width: $tablet-width) {
+    position: relative;
     display: flex;
     justify-content: center;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 1px;
+      height: 338px;
+      top: 14px;
+      left: 47%;
+      background-color: var(--gray-600);
+    }
   }
 }
 
