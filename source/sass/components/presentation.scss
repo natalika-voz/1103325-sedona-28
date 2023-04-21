@@ -14,9 +14,15 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding-block-start: 58px;
+
     &::before {
       content: none;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-block-start: 62px;
   }
 }
 
