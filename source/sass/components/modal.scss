@@ -1,16 +1,28 @@
 .modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+
+  &--closed {
+    display: none;
+  }
+}
+
+.modal__container {
   display: flex;
   flex-direction: column;
-  text-align: center;
-}
-
-.modal__error {
-  padding: 45px 41px 35px;
-}
-
-.modal__sent {
-  padding-block: 39px 0;
-  padding-inline: 0;
+  align-items: center;
+  padding-inline: 42px;
+  padding-block: 53px 35px;
+  background-color: var(--white);
+  max-width: 400px;
 }
 
 .modal__title {
@@ -18,7 +30,7 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
-  text-transform: uppercase;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
@@ -27,90 +39,17 @@
 }
 
 .modal__text {
-  margin-block: 0 28px;
+  margin-block: 0 20px;
   color: var(--black-100);
-  text-transform: uppercase;
-}
+  text-align: center;
 
-.modal__footer {
-  padding: 20px;
-  background-color: var(--gray-200);
+  @media (min-width: $tablet-width) {
+    margin-block-end: 28px;
+  }
 }
 
 .modal__button {
-  width: 100%;
-  margin-inline: auto;
-
-  &--small {
-    width: 180px;
-  }
-
   @media (min-width: $tablet-width) {
-   width: 458px;
-
-  &--small {
-  width: 272px;
-  }
+    width: 100%;
   }
 }
-
-// .modal {
-//   display: flex;
-//   flex-direction: column;
-//   text-align: center;
-
-//   &--error {
-//     padding: 45px 41px 35px;
-//   }
-
-//   @media (min-width: $tablet-width) {
-//     max-width: 640px;
-//     padding: 50px 46px 49px;
-
-//     &--error {
-//       max-width: 400px;
-//     }
-//   }
-// }
-
-// .modal__title {
-//   margin-block-start: 0;
-//   margin-block-end: 36px;
-//   font-size: 18px;
-//   font-weight: 700;
-//   line-height: 26px;
-//   text-transform: uppercase;
-
-//   @media (min-width: $tablet-width) {
-//     font-size: 30px;
-//     line-height: 40px;
-//   }
-// }
-
-// .modal__text {
-//   margin-block: 0 28px;
-//   color: var(--black-100);
-//   text-transform: uppercase;
-// }
-
-// .modal__footer {
-//   padding: 20px;
-//   background-color: var(--gray-200);
-// }
-
-// .modal__button {
-//   width: 100%;
-//   margin-inline: auto;
-
-//   &--small {
-//     width: 180px;
-//   }
-
-//   @media (min-width: $tablet-width) {
-//     width: 458px;
-
-//     &--small {
-//       width: 272px;
-//     }
-//   }
-// }
