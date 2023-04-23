@@ -34,6 +34,11 @@
 .sedona-image--small {
   min-height: 158px;
 
+  & .sedona-image__text {
+    width: 229px;
+    height: 39px;
+  }
+
   @media (min-width: $tablet-width) {
     min-height: 341px;
   }
