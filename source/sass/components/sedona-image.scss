@@ -37,6 +37,16 @@
   & .sedona-image__text {
     width: 229px;
     height: 39px;
+
+    @media (min-width: $tablet-width) {
+      width: 457px;
+      height: 78px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 460px;
+      height: 80px;
+    }
   }
 
   @media (min-width: $tablet-width) {
