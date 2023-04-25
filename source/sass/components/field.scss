@@ -10,6 +10,7 @@
   text-transform: uppercase;
   cursor: pointer;
 
+
   &--bold {
     position: relative;
     padding-inline-start: 65px;
@@ -35,16 +36,23 @@
       left: 0;
     }
 
-    // &--radio-checked::after {
-    //   content: "";
-    //   position: absolute;
-    //   width: 16px;
-    //   height: 16px;
-    //   background-color: var(--black-100);
-    //   border-radius: 50%;
-    //   top: 7px;
-    //   left: 15px;
-    // }
+    &::after {
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      background-color: var(--black-100);
+      border-radius: 50%;
+      top: 15px;
+      left: 15px;
+    }
+
+    &:hover::before {
+      background-color: var(--gray);
+    }
+
+    &:checked::before {
+      background-color: var(--gray-700);
+    }
   }
 
   &--checkbox {
@@ -58,25 +66,56 @@
       width: 46px;
       height: 46px;
       background-repeat: no-repeat;
-      background-position: top 12px left 12px;
+      background-position: center;
       background-color: var(--gray-200);
       border-radius: 4px;
       top: 0;
       left: 0;
+    }
+
+    &::after {
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      background-color: var(--black-100);
+      border-radius: 50%;
+      top: 15px;
+      left: 15px;
+    }
+
+    &:hover::before {
+      background-color: var(--gray);
+    }
+
+    &:active::before {
+      background-color: var(--gray-700);
+    }
+
+    &:active::after {
+      background-color: rgba(51, 51, 51, 0.3);
     }
   }
 }
 
 .field__input,
 .field__textarea {
-  padding: 16px;
+  padding: 12px;
   font-family: inherit;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
-  border: none;
   background-color: var(--gray-200);
   resize: vertical;
+  border: 4px solid transparent;
+
+  &:hover {
+    background-color: var(--gray);
+  }
+
+  &:focus {
+    background-color: var(--white);
+    border-color: var(--gray);
+  }
 
   &::placeholder {
     color: #0000004d;
@@ -91,15 +130,16 @@
   background-image: url("../img/form/tick.svg");
 }
 
+.field__checkbox:checked + .field__label--checkbox:active::before {
+  opacity: 0.3;
+}
+
 .field__radio:checked + .field__label--radio::after {
   content: "";
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  background-color: var(--black-100);
-  border-radius: 50%;
-  top: 15px;
-  left: 15px;
+}
+
+.field__radio:checked + .field__label--radio:active::after {
+  background-color: rgba(51, 51, 51, 0.3);
 }
 
 .field__textarea {
