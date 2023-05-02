@@ -19,16 +19,16 @@
   row-gap: 16px;
   padding-block-start: 8px;
   padding-inline-start: 47px;
-  background-image: url("../img/index/icon-house.svg");
+  background-image: url("../img/svg/icon-house.svg");
   background-size: 40px;
   background-repeat: no-repeat;
 
   &--food {
-    background-image: url("../img/index/icon-burger.svg");
+    background-image: url("../img/svg/icon-burger.svg");
   }
 
   &--souvenirs {
-    background-image: url("../img/index/icon-gift.svg");
+    background-image: url("../img/svg/icon-gift.svg");
   }
 
   @media (min-width: $tablet-width) {
