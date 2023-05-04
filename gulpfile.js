@@ -11,13 +11,15 @@ import svgo from 'gulp-svgmin';
 import squoosh from 'gulp-libsquoosh';
 import { deleteAsync } from 'del';
 import svgstore from 'gulp-svgstore';
+import csso from 'postcss-csso';
 
 const styles = () => {
   return gulp.src('source/sass/style.scss', { sourcemaps: true })
     .pipe(plumber())
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss([
-      autoprefixer()
+      autoprefixer(),
+      csso()
     ]))
     .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
@@ -41,7 +43,7 @@ const reload = (done) => {
 }
 
 const scripts = () => {
-  return gulp.src('source/js/index.js')
+  return gulp.src('source/js/*.js')
     .pipe(terser())
     .pipe(gulp.dest('build/js'));
 }
