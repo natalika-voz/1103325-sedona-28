@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="/css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="/js/menu.js" type="module"></script>
-    <script src="/js/map.js" type="module"></script>
   </head>
   <body class="page__body">
     <div class="container">
@@ -151,7 +150,9 @@
             <source media="(min-width: 768px)" srcset="img/map-t@1x.jpg, img/map-t@2x.jpg 2x">
             <img class="map__image" src="img/map-m@1x.jpg" srcset="img/map-m@2x.jpg 2x" width="320" height="350" alt="Карта города Седоны">
           </picture>
-          <div id="map"></div>
+          <div id="map">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A10074a6dda3499989b6ee6c844f1bd51e2bddbece0e3add96433818ed4ef9191&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+          </div>
         </div>
       </main>
 

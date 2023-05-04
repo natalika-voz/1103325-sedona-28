@@ -14,14 +14,14 @@ import svgstore from 'gulp-svgstore';
 import csso from 'postcss-csso';
 
 const styles = () => {
-  return gulp.src('source/sass/style.scss', { sourcemaps: true })
+  return gulp.src('source/sass/style.scss')
     .pipe(plumber())
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss([
       autoprefixer(),
       csso()
     ]))
-    .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
+    .pipe(gulp.dest('build/css'))
     .pipe(browser.stream());
 }
 
@@ -107,7 +107,7 @@ const watcher = () => {
   gulp.watch('source/*.html', gulp.series(html, reload));
 }
 
-export const clean = () => {
+const clean = () => {
   return deleteAsync('build');
 }
 
