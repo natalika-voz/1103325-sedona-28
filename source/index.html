@@ -5,14 +5,18 @@
     <title>HTML Academy: Седона</title>
     <link rel="preload" href="/fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.webmanifest">
+    <link rel="stylesheet" href="/css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body class="page__body">
     <div class="container">
       <header class="main-header">
         <a class="main-header__logo">
-          <img class="main-header__logo-image" src="./img/logo.svg" width="185" height="96" alt="Логотип сайта Седона">
+          <img class="main-header__logo-image" src="img/svg/logo.svg" width="185" height="96" alt="Логотип сайта Седона">
         </a>
 
         <nav class="nav nav--nojs">
@@ -27,7 +31,7 @@
               <a class="nav__link" href="./form.html">Форма отзыва</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
+              <a class="nav__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">Html academy</a>
             </li>
             <li class="nav__item nav__item--menu" role="none">
               <button class="toggle-menu" type="button" aria-label="Меню" aria-expanded="true"></button>
@@ -40,7 +44,7 @@
         <h1 class="visually-hidden">Седона</h1>
 
         <div class="sedona-image">
-          <img class="sedona-image__text" src="./img/sedona-image/sedona-multiple.svg" width="282" height="214" alt="Добро пожаловать в Седону">
+          <img class="sedona-image__text" src="img/svg/sedona-multiple.svg" width="282" height="214" alt="Добро пожаловать в Седону">
         </div>
 
         <section class="hero">
@@ -60,12 +64,12 @@
                   <p class="feature-header__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
                 </header>
                 <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/index/city-d@1x.webp 1x, img/index/city-d@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/index/city-t@1x.webp 1x, img/index/city-t@2x.webp 2x">
-                  <source type="image/webp" srcset="img/index/city-m@1x.webp 1x, img/index/city-m@2x.webp 2x">
-                  <source media="(min-width: 1200px)" srcset="img/index/city-d@1x.jpg, img/index/city-d@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/index/city-t@1x.jpg, img/index/city-t@2x.jpg 2x">
-                  <img class="features__image" src="img/index/city-m@1x.jpg" srcset="img/index/city-m@2x.jpg 2x" width="320" height="260" alt="Фото города Седона">
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/city-d@1x.webp 1x, img/city-d@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/city-t@1x.webp 1x, img/city-t@2x.webp 2x">
+                  <source type="image/webp" srcset="img/city-m@1x.webp 1x, img/city-m@2x.webp 2x">
+                  <source media="(min-width: 1200px)" srcset="img/city-d@1x.jpg, img/city-d@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/city-t@1x.jpg, img/city-t@2x.jpg 2x">
+                  <img class="features__image" src="img/city-m@1x.jpg" srcset="img/city-m@2x.jpg 2x" width="320" height="260" alt="Фото города Седона">
                 </picture>
               </div>
 
@@ -95,12 +99,12 @@
                   <p class="feature-header__text">Да, по нему можно пройтись! Если вы осмелитесь, конечно</p>
                 </header>
                 <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/index/bridge-d@1x.webp 1x. img/index/bridge-d@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/index/bridge-t@1x.webp 1x, img/index/bridge-t@2x.webp 2x">
-                  <source type="image/webp" srcset="img/index/bridge-m@1x.webp 1x, img/index/bridge-m@2x.webp 2x">
-                  <source media="(min-width: 1200px)" srcset="img/index/bridge-d@1x.jpg, img/index/bridge-d@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/index/bridge-t@1x.jpg, img/index/bridge-t@2x.jpg 2x">
-                  <img class="features__image" src="img/index/bridge-m@1x.jpg" srcset="img/index/bridge-m@2x.jpg 2x" width="320" height="260" alt="Фото моста дьявола">
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/bridge-d@1x.webp 1x, img/bridge-d@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/bridge-t@1x.webp 1x, img/bridge-t@2x.webp 2x">
+                  <source type="image/webp" srcset="img/bridge-m@1x.webp 1x, img/bridge-m@2x.webp 2x">
+                  <source media="(min-width: 1200px)" srcset="img/bridge-d@1x.jpg, img/bridge-d@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/bridge-t@1x.jpg, img/bridge-t@2x.jpg 2x">
+                  <img class="features__image" src="img/bridge-m@1x.jpg" srcset="img/bridge-m@2x.jpg 2x" width="320" height="260" alt="Фото моста дьявола">
                 </picture>
               </div>
             </li>
@@ -135,17 +139,17 @@
           <div class="hotels__offer">
             <h3 class="hotels__title">Заинтересовались?</h3>
             <p class="hotels__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-            <a class="button hotels__button" href="#">Найти гостиницу</a>
+            <a class="button hotels__button" href="/search">Найти гостиницу</a>
           </div>
         </section>
 
         <div class="map">
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/index/map-d@1x.jpg, img/index/map-d@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/index/map-t@1x.jpg, img/index/map-t@2x.jpg 2x">
-            <img class="map__image" src="img/index/map-m@1x.jpg" srcset="img/index/map-m@2x.jpg 2x" width="320" height="350" alt="Карта города Седоны">
+            <source media="(min-width: 1200px)" srcset="img/map-d@1x.jpg, img/map-d@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/map-t@1x.jpg, img/map-t@2x.jpg 2x">
+            <img class="map__image" src="img/map-m@1x.jpg" srcset="img/map-m@2x.jpg 2x" width="320" height="350" alt="Карта города Седоны">
           </picture>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.13688489993!2d-111.83633807359472!3d34.85444188803121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1681905962989!5m2!1sru!2sru" width="320" height="350" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Карта города Седоны"></iframe>
+          <div class="map__map" id="map"></div>
         </div>
       </main>
 
@@ -164,11 +168,13 @@
         </ul>
         <a class="main-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Лендинг интенсива HTML и CSS. Адаптивная верстка и автоматизация" target="_blank">Разработано
           <svg width="36" height="36">
-            <use xlink:href="img/sprite.svg#icon-copyright"></use>
+            <use xlink:href="img/sprite.svg#htmlacademy"></use>
           </svg>
         </a>
       </footer>
     </div>
-    <script src="./js/index.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=8c35d093-ead6-40a3-a6e8-38566239dd67" type="text/javascript"></script>
+    <script src="/js/menu.js"></script>
+    <script src="/js/map.js" type="text/javascript"></script>
   </body>
 </html>

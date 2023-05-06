@@ -1,14 +1,7 @@
 .map {
   width: 100%;
-  min-height: 350px;
+  height: 350px;
   position: relative;
-
-  & iframe {
-    position: relative;
-    width: 100%;
-    min-height: 100%;
-    display: block;
-  }
 }
 
 .map__image {
@@ -19,4 +12,9 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.map__map {
+  width: 100%;
+  height: inherit;
 }

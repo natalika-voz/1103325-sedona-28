@@ -127,7 +127,7 @@
 }
 
 .field__checkbox:checked + .field__label--checkbox::before {
-  background-image: url("../img/form/tick.svg");
+  background-image: url("../img/svg/tick.svg");
 }
 
 .field__checkbox:checked + .field__label--checkbox:active::before {
@@ -158,11 +158,11 @@
   width: 58px;
   height: 58px;
   background-color: var(--gray-500);
-  background-image: url("../img/form/phone.svg");
+  background-image: url("../img/svg/phone.svg");
   background-repeat: no-repeat;
   background-position: center;
 
   &--mail {
-    background-image: url("../img/form/mail.svg");
+    background-image: url("../img/svg/mail.svg");
   }
 }

@@ -5,14 +5,19 @@
     <title>HTML Academy: Седона</title>
     <link rel="preload" href="/fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.webmanifest">
+    <link rel="stylesheet" href="/css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="/js/menu.js" type="module"></script>
   </head>
   <body class="page__body">
     <div class="container">
       <header class="main-header">
         <a class="main-header__logo" href="./index.html">
-          <img class="main-header__logo-image" src="./img/logo.svg" width="185" height="96" alt="Логотип сайта Седона">
+          <img class="main-header__logo-image" src="img/svg/logo.svg" width="185" height="96" alt="Логотип сайта Седона">
         </a>
 
         <nav class="nav nav--nojs">
@@ -38,7 +43,7 @@
 
       <main class="main">
         <div class="sedona-image sedona-image--small">
-          <img class="sedona-image__text" src="./img/sedona-image/sedona-single.svg" width="229" height="39" alt="Седона">
+          <img class="sedona-image__text" src="img/svg/sedona-single.svg" width="229" height="39" alt="Седона">
         </div>
         <section class="media">
           <h1 class="media__title">Фото и видео</h1>
@@ -48,9 +53,9 @@
               <article class="photo">
                 <a class="photo__link" href="#">
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="img/catalog/photo-1-d@1x.jpg, img/catalog/photo-1-d@2x.jpg 2x">
-                    <source media="(min-width: 768px)" srcset="img/catalog/photo-1-t@1x.jpg, img/catalog/photo-1-t@2x.jpg 2x">
-                    <img class="photo__image" src="img/catalog/photo-1-m@1x.jpg" srcset="img/catalog/photo-1-m@2x.jpg 2x" width="280" height="280" alt="Изображение фотографии неродные просторы">
+                    <source media="(min-width: 1200px)" srcset="img/photo-1-d@1x.jpg, img/photo-1-d@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-1-t@1x.jpg, img/photo-1-t@2x.jpg 2x">
+                    <img class="photo__image" src="img/photo-1-m@1x.jpg" srcset="img/photo-1-m@2x.jpg 2x" width="280" height="280" alt="Изображение фотографии неродные просторы">
                   </picture>
                 </a>
                 <div class="photo__footer">
@@ -66,9 +71,9 @@
               <article class="photo">
                 <a class="photo__link" href="#">
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="img/catalog/photo-2-d@1x.jpg, img/catalog/photo-2-d@2x.jpg 2x">
-                    <source media="(min-width: 768px)" srcset="img/catalog/photo-1-t@1x.jpg, img/catalog/photo-2-t@2x.jpg 2x">
-                    <img class="photo__image" src="img/catalog/photo-2-m@1x.jpg" srcset="img/catalog/photo-2-m@2x.jpg 2x" width="280" height="280" alt="Изображение фотографии местная растительность">
+                    <source media="(min-width: 1200px)" srcset="img/photo-2-d@1x.jpg, img/photo-2-d@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-1-t@1x.jpg, img/photo-2-t@2x.jpg 2x">
+                    <img class="photo__image" src="img/photo-2-m@1x.jpg" srcset="img/photo-2-m@2x.jpg 2x" width="280" height="280" alt="Изображение фотографии местная растительность">
                   </picture>
                 </a>
                 <div class="photo__footer">
@@ -84,9 +89,9 @@
               <article class="photo">
                 <a class="photo__link" href="#">
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="img/catalog/photo-3-d@1x.jpg, img/catalog/photo-3-d@2x.jpg 2x">
-                    <source media="(min-width: 768px)" srcset="img/catalog/photo-3-t@1x.jpg, img/catalog/photo-3-t@2x.jpg 2x">
-                    <img class="photo__image" src="img/catalog/photo-3-m@1x.jpg" srcset="img/catalog/photo-3-m@2x.jpg 2x" width="280" height="280" alt="Изображение фотографии дорога на север">
+                    <source media="(min-width: 1200px)" srcset="img/photo-3-d@1x.jpg, img/photo-3-d@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-3-t@1x.jpg, img/photo-3-t@2x.jpg 2x">
+                    <img class="photo__image" src="img/photo-3-m@1x.jpg" srcset="img/photo-3-m@2x.jpg 2x" width="280" height="280" alt="Изображение фотографии дорога на север">
                   </picture>
                 </a>
                 <div class="photo__footer photo__footer--road">
@@ -102,9 +107,9 @@
               <article class="photo">
                 <a class="photo__link" href="#">
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="img/catalog/photo-4-d@1x.jpg, img/catalog/photo-4-d@2x.jpg 2x">
-                    <source media="(min-width: 768px)" srcset="img/catalog/photo-4-t@1x.jpg, img/catalog/photo-4-t@2x.jpg 2x">
-                    <img class="photo__image" src="img/catalog/photo-4-m@1x.jpg" srcset="img/catalog/photo-4-m@2x.jpg 2x" width="280" height="280" alt="Изображение фотографии мост дьявола">
+                    <source media="(min-width: 1200px)" srcset="img/photo-4-d@1x.jpg, img/photo-4-d@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-4-t@1x.jpg, img/photo-4-t@2x.jpg 2x">
+                    <img class="photo__image" src="img/photo-4-m@1x.jpg" srcset="img/photo-4-m@2x.jpg 2x" width="280" height="280" alt="Изображение фотографии мост дьявола">
                   </picture>
                 </a>
                 <div class="photo__footer">
@@ -122,11 +127,11 @@
         <section class="presentation">
           <h2 class="presentation__title">Все еще сомневаетесь?</h2>
           <p class="presentation__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-          <div class="presentation__preview" href="#">
+          <div class="presentation__preview">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/catalog/video-d@1x.jpg, img/catalog/video-d@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/catalog/video-t@1x.jpg, img/catalog/video-t@2x.jpg 2x">
-              <img class="presentation__image" src="img/catalog/video-m@1x.jpg" srcset="img/catalog/video-m@2x.jpg 2x" alt="Изображение превью видео">
+              <source media="(min-width: 1200px)" srcset="img/video-d@1x.jpg, img/video-d@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/video-t@1x.jpg, img/video-t@2x.jpg 2x">
+              <img class="presentation__image" src="img/video-m@1x.jpg" srcset="img/video-m@2x.jpg 2x" alt="Изображение превью видео">
             </picture>
             <button class="presentation__play" type="button"><span class="visually-hidden">Воспроизвести видео</span></button>
           </div>
@@ -148,11 +153,10 @@
         </ul>
         <a class="main-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Лендинг интенсива HTML и CSS. Адаптивная верстка и автоматизация" target="_blank">Разработано
           <svg width="36" height="36">
-            <use xlink:href="img/sprite.svg#icon-copyright"></use>
+            <use xlink:href="img/sprite.svg#htmlacademy"></use>
           </svg>
         </a>
       </footer>
     </div>
-    <script src="./js/index.js"></script>
   </body>
 </html>

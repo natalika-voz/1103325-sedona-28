@@ -4,12 +4,12 @@
   height: 26px;
   padding-inline-start: 37px;
   font-weight: 700;
-  background-image: url("../img/catalog/like-icon.svg");
+  background-image: url("../img/svg/like-icon.svg");
   background-repeat: no-repeat;
   background-position: top 0 left 0;
 
   @media (min-width: $desktop-width) {
     color: var(--white);
-    background-image: url("../img/catalog/like-icon-white.svg");
+    background-image: url("../img/svg/like-icon-white.svg");
   }
 }

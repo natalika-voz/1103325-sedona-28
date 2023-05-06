@@ -5,14 +5,19 @@
     <title>HTML Academy: Седона</title>
     <link rel="preload" href="/fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.webmanifest">
+    <link rel="stylesheet" href="/css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="/js/menu.js" type="module"></script>
   </head>
   <body class="page__body">
     <div class="container">
       <header class="main-header">
         <a class="main-header__logo" href="./index.html">
-          <img class="main-header__logo-image" src="./img/logo.svg" width="185" height="96" alt="Логотип сайта Седона">
+          <img class="main-header__logo-image" src="img/svg/logo.svg" width="185" height="96" alt="Логотип сайта Седона">
         </a>
 
         <nav class="nav nav--nojs">
@@ -38,7 +43,7 @@
 
       <main class="main">
         <div class="sedona-image sedona-image--small">
-          <img class="sedona-image__text" src="./img/sedona-image/sedona-single.svg" width="229" height="39" alt="Седона">
+          <img class="sedona-image__text" src="img/svg/sedona-single.svg" width="229" height="39" alt="Седона">
         </div>
         <section class="feedback">
           <h1 class="visually-hidden">Отзывы</h1>
@@ -119,7 +124,7 @@
             </div>
 
             <div class="fieldset">
-              <h2 class="fieldset__legend fieldset__legend--decor" for="emotions">Опишите свои эмоции:</h2>
+              <h2 class="fieldset__legend fieldset__legend--decor">Опишите свои эмоции:</h2>
 
               <div class="feedback__textarea">
                 <div class="field">
@@ -153,13 +158,13 @@
         </ul>
         <a class="main-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Лендинг интенсива HTML и CSS. Адаптивная верстка и автоматизация" target="_blank">Разработано
           <svg width="36" height="36">
-            <use xlink:href="img/sprite.svg#icon-copyright"></use>
+            <use xlink:href="img/sprite.svg#htmlacademy"></use>
           </svg>
         </a>
       </footer>
     </div>
 
-    <div class="modal modal--closed js-modal-failure">
+    <div class="modal modal--closed">
       <div class="modal__container">
         <h2 class="modal__title">Что-то пошло не&nbsp;так!</h2>
         <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
@@ -167,7 +172,7 @@
       </div>
     </div>
 
-    <div class="modal modal--closed js-modal-review">
+    <div class="modal modal--closed">
       <div class="modal__container modal-review">
         <div class="modal-review__header">
           <h2 class="modal__title">Ваш отзыв отправлен!</h2>
@@ -178,7 +183,5 @@
         </div>
       </div>
     </div>
-
-    <script src="./js/index.js"></script>
   </body>
 </html>
