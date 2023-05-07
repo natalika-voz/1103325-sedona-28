@@ -5,10 +5,17 @@
   justify-items: center;
   padding-block: 41px 40px;
 
+
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(3, auto);
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding-block-start: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-block: 36px;
+    padding-inline: 120px;
   }
 }
 

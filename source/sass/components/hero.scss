@@ -6,6 +6,10 @@
     min-height: 206px;
     padding-block-start: 48px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-block-start: 60px;
+  }
 }
 
 .hero__title {

@@ -3,7 +3,11 @@
   padding-inline: 18px;
 
   @media (min-width: $tablet-width) {
-    padding-block-start: 60px;
+    padding-block: 60px 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-block: 60px;
   }
 }
 
@@ -36,6 +40,10 @@
 
   @media (min-width: $tablet-width) {
     margin-block-end: 45px;
+
+    & span {
+      display: block;
+    }
   }
 }
 

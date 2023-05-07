@@ -43,6 +43,7 @@
 
   &--bridge {
     padding-block: 38px 36px;
+    order: 1;
   }
 
   @media (min-width: $tablet-width) {
@@ -62,6 +63,13 @@
 
     &--road {
       padding-inline: 25px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--gray {
+      padding-block-start: 52px;
+      padding-block-end: 80px;
     }
   }
 }
@@ -85,6 +93,18 @@
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
+
+    &--bridge {
+      margin-inline: 19px;
+    }
+
+    &--road {
+      margin-inline: 14px;
+    }
+
+    &--tourists {
+      margin-inline: 23px;
+    }
   }
 }
 
@@ -106,5 +126,21 @@
 
   &--small {
     max-width: 255px;
+  }
+
+  &--road {
+    max-width: 250px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--road {
+      max-width: 175px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--road {
+      max-width: 300px;
+    }
   }
 }
