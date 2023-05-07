@@ -47,7 +47,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-inline: 33px;
+    padding-inline: 30px;
     padding-block: 53px 30px;
     background-image: none;
 
@@ -60,16 +60,12 @@
         content: none;
       }
     }
-
-    &--road {
-      padding-inline: 25px;
-    }
   }
 
   @media (min-width: $desktop-width) {
     &--gray {
       padding-block-start: 52px;
-      padding-block-end: 80px;
+      padding-block-end: 54px;
     }
   }
 }
@@ -93,17 +89,11 @@
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
+    max-width: 90%;
+    margin-inline: auto;
 
-    &--bridge {
-      margin-inline: 19px;
-    }
-
-    &--road {
-      margin-inline: 14px;
-    }
-
-    &--tourists {
-      margin-inline: 23px;
+    & span {
+      display: block;
     }
   }
 }
@@ -119,28 +109,14 @@
 }
 
 .feature-header__text {
-  max-width: 264px;
-  margin-inline: auto;
   margin-block: 0;
   text-align: center;
 
-  &--small {
-    max-width: 255px;
-  }
-
   &--road {
-    max-width: 250px;
-  }
-
-  @media (min-width: $tablet-width) {
-    &--road {
-      max-width: 175px;
-    }
+    padding-inline: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    &--road {
-      max-width: 300px;
-    }
+    padding-inline: 20px;
   }
 }

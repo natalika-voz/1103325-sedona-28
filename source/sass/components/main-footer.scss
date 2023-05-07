@@ -4,7 +4,7 @@
   justify-content: center;
   justify-items: center;
   padding-block: 41px 40px;
-
+  padding-inline: 60px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(3, auto);

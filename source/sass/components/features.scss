@@ -35,10 +35,6 @@
 
 .features__item-top--bridge {
   grid-template-columns: 1fr min(33%, 400px);
-
-  & .features__image {
-    order: -1;
-  }
 }
 
 .features__image {

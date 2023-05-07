@@ -61,9 +61,9 @@
   @media (min-width: $tablet-width) {
     width: 461px;
     height: 350px;
-  }
 
-  &--multiple {
-    transform: translateY(-5px);
+    &--multiple {
+      transform: translateY(-5px);
+    }
   }
 }
