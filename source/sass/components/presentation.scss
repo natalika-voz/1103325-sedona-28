@@ -16,6 +16,7 @@
   @media (min-width: $tablet-width) {
     padding-block-start: 54px;
     padding-block-end: 40px;
+    padding-inline: 60px;
 
     &::before {
       content: none;
@@ -24,6 +25,7 @@
 
   @media (min-width: $desktop-width) {
     padding-block-start: 62px;
+    padding-block-end: 80px;
   }
 }
 
@@ -60,9 +62,10 @@
 
 .presentation__image {
   display: block;
+  width: 100%;
   margin-inline: auto;
+  max-width: 800px;
 }
-
 
 .presentation__play {
   position: absolute;
