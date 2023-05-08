@@ -17,7 +17,7 @@
 }
 
 .photo__footer {
-  padding-block: 15px 25px;
+  padding-block: 15px 24px;
 
   @media (min-width: $tablet-width) {
     position: absolute;
@@ -50,14 +50,15 @@
 }
 
 .photo__description {
-  margin-block: 0 12px;
+  margin-block: 0 2px;
+  font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 
 .photo__autor {
-  margin-block: 0 11px;
+  margin-block: 0 12px;
   color: var(--black-100);
 
   @media (min-width: $tablet-width) {

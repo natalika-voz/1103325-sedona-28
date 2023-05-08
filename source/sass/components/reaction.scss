@@ -1,7 +1,8 @@
 .reaction {
   display: inline-flex;
+  align-items: center;
   min-width: 61px;
-  height: 26px;
+  min-height: 26px;
   padding-inline-start: 37px;
   font-weight: 700;
   background-image: url("../img/svg/like-icon.svg");

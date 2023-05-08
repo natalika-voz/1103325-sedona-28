@@ -4,6 +4,7 @@
 
   @media (min-width: $tablet-width) {
     padding-inline: 60px;
+    padding-block-start: 66px;
   }
 
   @media (min-width: $desktop-width) {
@@ -12,20 +13,21 @@
 }
 
 .media__title {
-  margin-block: 0 35px;
-  font-size: 21px;
+  margin-block: 0 26px;
+  font-size: 18px;
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
     font-size: 30px;
   }
 }
 
 .media__text {
-  margin-block: 0 25px;
+  margin-block: 0 36px;
   color: var(--black-100);
   text-transform: uppercase;
   text-align: center;
