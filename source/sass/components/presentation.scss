@@ -14,7 +14,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-block-start: 58px;
+    padding-block-start: 54px;
+    padding-block-end: 40px;
 
     &::before {
       content: none;
@@ -35,6 +36,7 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
     font-size: 30px;
   }
 }
@@ -44,6 +46,12 @@
   color: var(--black-100);
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    max-width: 500px;
+    margin-block-end: 90px;
+    margin-inline: auto;
+  }
 }
 
 .presentation__preview {

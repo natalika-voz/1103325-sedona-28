@@ -9,6 +9,7 @@
 
   @media (min-width: $desktop-width) {
     padding-inline: 0;
+    padding-block-start: 100px;
   }
 }
 
@@ -33,7 +34,13 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    margin-block-end: 67px;
+    margin-block-end: 80px;
+    margin-inline: auto;
+    max-width: 445px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-block-end: 86px;
   }
 }
 
