@@ -2,10 +2,10 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-block-end: 16px;
 }
 
 .field__label {
+  padding-inline-start: 16px;
   color: var(--black-100);
   text-transform: uppercase;
   cursor: pointer;
@@ -95,6 +95,12 @@
       background-color: rgba(51, 51, 51, 0.3);
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &--radio {
+      padding-inline-start: 62px;
+    }
+  }
 }
 
 .field__input,
@@ -143,7 +149,7 @@
 }
 
 .field__textarea {
-  min-height: 150px;
+  min-height: 160px;
 
   @media (min-width: $desktop-width) {
     max-width: 768px;

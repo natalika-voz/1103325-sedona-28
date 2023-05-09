@@ -19,14 +19,16 @@
   }
 
   &--visited-sights {
-    padding-block-end: 24px;
+    padding-block-end: 25px;
   }
+}
 
-  // &--visited-sights {
-  //   &::before {
-  //     top: -80px;
-  //   }
-  // }
+.fieldset__field-row {
+  margin-block-end: 16px;
+
+  &:last-child {
+    margin-block-end: 0;
+  }
 }
 
 .fieldset__legend {
@@ -40,6 +42,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
+    margin-block-end: 28px;
 
     &--decor {
       position: relative;
@@ -77,6 +80,5 @@
     &::after {
       width: 280px;
     }
-
   }
 }
