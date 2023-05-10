@@ -5,8 +5,13 @@
 }
 
 .modal-review__header {
-  padding-block: 39px;
+  padding-block: 39px 50px;
   padding-inline: 39px;
+
+  @media (min-width: $tablet-width) {
+    padding-block: 45px 53px;
+    padding-inline: 70px;
+  }
 }
 
 .modal-review__text {
@@ -14,7 +19,7 @@
 }
 
 .modal-review__footer {
-  padding: 20px;
+  padding: 20px 21px 22px;
   background-color: var(--gray-200);
   align-self: stretch;
 
@@ -26,4 +31,9 @@
 
 .modal-review__button {
   width: 100%;
+  font-size: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
