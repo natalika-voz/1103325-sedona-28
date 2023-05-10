@@ -41,7 +41,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-block-start: 170px;
     background-size: 81px 73px;
+    background-position: center 68px;
   }
 }
 
@@ -61,4 +63,14 @@
   margin-block-end: 0;
   color: var(--black-100);
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    &--food {
+      margin-inline: 17px;
+    }
+
+    &--souvenirs {
+      margin-inline: 10px;
+    }
+  }
 }

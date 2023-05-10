@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="preload" href="/fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -43,7 +43,7 @@
 
       <main class="main">
         <div class="sedona-image sedona-image--small">
-          <img class="sedona-image__text" src="img/svg/sedona-single.svg" width="229" height="39" alt="Седона">
+          <img class="sedona-image__single-text" src="img/svg/sedona-single.svg" width="229" height="39" alt="Седона">
         </div>
         <section class="feedback">
           <h1 class="visually-hidden">Отзывы</h1>
@@ -53,15 +53,15 @@
             <div class="feedback__user-container">
               <div class="fieldset feedback__fieldset-user">
                 <h2 class="fieldset__legend">Представьтесь:</h2>
-                <div class="field">
+                <div class="field fieldset__field-row">
                   <label class="field__label" for="name">Имя*:</label>
                   <input class="field__input" type="text" name="submitted-name" autocomplete="name" id="name" value="Пётр" required>
                 </div>
-                <div class="field">
+                <div class="field fieldset__field-row">
                   <label class="field__label" for="surname">Фамилия*:</label>
                   <input class="field__input" type="text" name="submitted-name" autocomplete="name" id="surname" value="Пустота" required>
                 </div>
-                <div class="field">
+                <div class="field fieldset__field-row">
                   <label class="field__label" for="patronymic">Отчество*:</label>
                   <input class="field__input" type="text" name="submitted-name" autocomplete="name" id="patronymic" value="Викторович" required>
                 </div>
@@ -69,12 +69,12 @@
 
               <div class="fieldset feedback__fieldset-contact">
                 <h2 class="fieldset__legend">Контактная информация:</h2>
-                <div class="field">
+                <div class="field fieldset__field-row">
                   <label class="field__label" for="tel">Контактный телефон*:</label>
                   <input class="field__input field__input--icon" type="tel" name="contacts" placeholder="Введите телефон" id="tel">
                   <span class="field__icon"></span>
                 </div>
-                <div class="field">
+                <div class="field fieldset__field-row">
                   <label class="field__label" for="mail">Электронная почта*:</label>
                   <input class="field__input field__input--icon" type="email" name="contacts" placeholder="Введите e-mail" id="mail">
                   <span class="field__icon field__icon--mail"></span>
@@ -82,17 +82,16 @@
               </div>
             </div>
 
-
             <div class="fieldset feedback__fieldset-impression">
               <h2 class="fieldset__legend fieldset__legend--decor">Ваше общее впечатление:</h2>
-              <div class="feedback__items">
+              <div class="feedback__radio">
                 <div class="field">
                   <input class="visually-hidden field__radio" type="radio" id="positive" name="impression" value="Скорее положительное" checked>
                   <label class="field__label field__label--bold field__label--radio" for="positive">Скорее положительное</label>
                 </div>
                 <div class="field">
-                  <input class="visually-hidden field__radio" type="radio" id="negative" name="impression" value="Скорее негативное">
-                  <label class="field__label field__label--bold field__label--radio" for="negative">Скорее негативное</label>
+                  <input class="visually-hidden field__radio" type="radio" id="negative" name="impression" value="Скорее отрицательное">
+                  <label class="field__label field__label--bold field__label--radio" for="negative">Скорее отрицательное</label>
                 </div>
                 <div class="field">
                   <input class="visually-hidden field__radio" type="radio" id="difficult" name="impression" value="Затрудняюсь ответить">
@@ -101,9 +100,9 @@
               </div>
             </div>
 
-            <div class="fieldset fieldset--visited-sights">
+            <div class="fieldset feedback__fieldset-visited">
               <h2 class="fieldset__legend fieldset__legend--decor">Посещенные достопримечательности:</h2>
-              <div class="feedback__items feedback__items--visited-sights">
+              <div class="feedback__checkbox">
                 <div class="field">
                   <input class="visually-hidden field__checkbox" type="checkbox" id="bridge" name="bridge">
                   <label class="field__label field__label--bold field__label--checkbox" for="bridge">Мост дьявола</label>

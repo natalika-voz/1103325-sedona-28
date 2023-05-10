@@ -43,10 +43,11 @@
 
   &--bridge {
     padding-block: 38px 36px;
+    order: 1;
   }
 
   @media (min-width: $tablet-width) {
-    padding-inline: 33px;
+    padding-inline: 30px;
     padding-block: 53px 30px;
     background-image: none;
 
@@ -59,9 +60,12 @@
         content: none;
       }
     }
+  }
 
-    &--road {
-      padding-inline: 25px;
+  @media (min-width: $desktop-width) {
+    &--gray {
+      padding-block-start: 52px;
+      padding-block-end: 54px;
     }
   }
 }
@@ -85,6 +89,12 @@
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
+    max-width: 90%;
+    margin-inline: auto;
+
+    & span {
+      display: block;
+    }
   }
 }
 
@@ -99,12 +109,14 @@
 }
 
 .feature-header__text {
-  max-width: 264px;
-  margin-inline: auto;
   margin-block: 0;
   text-align: center;
 
-  &--small {
-    max-width: 255px;
+  &--road {
+    padding-inline: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-inline: 20px;
   }
 }
