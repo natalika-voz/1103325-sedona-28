@@ -1,7 +1,7 @@
 .sedona-image {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   min-height: 389px;
   background-image: url("../img/svg/intro-triangle.svg"), url("../img/back-m@1x.jpg");
   background-color: var(--blue);
@@ -46,26 +46,29 @@
 .sedona-image__multiple-text {
   width: 282px;
   height: 214px;
+  margin-block-start: 90px;
 
   @media (min-width: $tablet-width) {
     width: 461px;
     height: 350px;
-    transform: translateY(-5px);
+    margin-block-start: 78px;
   }
 }
 
 .sedona-image__single-text {
   width: 229px;
   height: 39px;
-  transform: translateY(-10px);
+  margin-block-start: 52px;
 
   @media (min-width: $tablet-width) {
     width: 457px;
     height: 78px;
+    margin-block-start: 95px;
   }
 
   @media (min-width: $desktop-width) {
     width: 460px;
     height: 80px;
+    margin-block-start: 100px;
   }
 }
