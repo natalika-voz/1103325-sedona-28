@@ -33,6 +33,10 @@
 
   @media (min-width: $tablet-width) {
     position: static;
+
+    &--opened .nav__list::before {
+      content: none;
+    }
   }
 }
 
