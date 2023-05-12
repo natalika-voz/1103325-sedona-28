@@ -14,7 +14,8 @@
   border: none;
   text-transform: uppercase;
 
-  &:hover:not(:disabled, .disabled) {
+  &:hover:not(:disabled, .disabled),
+  &:focus:not(:disabled, .disabled) {
     background-color: var(--blue-100);
   }
 

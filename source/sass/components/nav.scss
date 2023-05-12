@@ -119,7 +119,8 @@
       color: var(--brown);
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: var(--blue);
     }
 

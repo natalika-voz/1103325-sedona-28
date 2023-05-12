@@ -37,7 +37,8 @@
   }
 
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: var(--blue-100);
   }
 

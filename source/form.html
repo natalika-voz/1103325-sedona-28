@@ -11,7 +11,6 @@
     <link rel="manifest" href="/manifest.webmanifest">
     <link rel="stylesheet" href="/css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="/js/menu.js" type="module"></script>
   </head>
   <body class="page__body">
     <div class="container">
@@ -55,15 +54,15 @@
                 <h2 class="fieldset__legend">Представьтесь:</h2>
                 <div class="field fieldset__field-row">
                   <label class="field__label" for="name">Имя*:</label>
-                  <input class="field__input" type="text" name="submitted-name" autocomplete="name" id="name" value="Пётр" required>
+                  <input class="field__input" type="text" name="submitted-name" autocomplete="name" id="name" placeholder="Иванов" required>
                 </div>
                 <div class="field fieldset__field-row">
                   <label class="field__label" for="surname">Фамилия*:</label>
-                  <input class="field__input" type="text" name="submitted-name" autocomplete="name" id="surname" value="Пустота" required>
+                  <input class="field__input" type="text" name="submitted-name" autocomplete="name" id="surname" placeholder="Иван" required>
                 </div>
                 <div class="field fieldset__field-row">
                   <label class="field__label" for="patronymic">Отчество*:</label>
-                  <input class="field__input" type="text" name="submitted-name" autocomplete="name" id="patronymic" value="Викторович" required>
+                  <input class="field__input" type="text" name="submitted-name" autocomplete="name" id="patronymic" placeholder="Иванович" required>
                 </div>
               </div>
 
@@ -87,15 +86,15 @@
               <div class="feedback__radio">
                 <div class="field">
                   <input class="visually-hidden field__radio" type="radio" id="positive" name="impression" value="Скорее положительное" checked>
-                  <label class="field__label field__label--bold field__label--radio" for="positive">Скорее положительное</label>
+                  <label class="field__label-radio" for="positive">Скорее положительное</label>
                 </div>
                 <div class="field">
                   <input class="visually-hidden field__radio" type="radio" id="negative" name="impression" value="Скорее отрицательное">
-                  <label class="field__label field__label--bold field__label--radio" for="negative">Скорее отрицательное</label>
+                  <label class="field__label-radio" for="negative">Скорее отрицательное</label>
                 </div>
                 <div class="field">
                   <input class="visually-hidden field__radio" type="radio" id="difficult" name="impression" value="Затрудняюсь ответить">
-                  <label class="field__label field__label--bold field__label--radio" for="difficult">Затрудняюсь ответить</label>
+                  <label class="field__label-radio" for="difficult">Затрудняюсь ответить</label>
                 </div>
               </div>
             </div>
@@ -105,19 +104,19 @@
               <div class="feedback__checkbox">
                 <div class="field">
                   <input class="visually-hidden field__checkbox" type="checkbox" id="bridge" name="bridge">
-                  <label class="field__label field__label--bold field__label--checkbox" for="bridge">Мост дьявола</label>
+                  <label class="field__label-checkbox" for="bridge">Мост дьявола</label>
                 </div>
                 <div class="field">
                   <input class="visually-hidden field__checkbox" type="checkbox" id="mountain" name="mountain" checked>
-                  <label class="field__label field__label--bold field__label--checkbox" for="mountain">Гора-Колокол</label>
+                  <label class="field__label-checkbox" for="mountain">Гора-Колокол</label>
                 </div>
                 <div class="field">
                   <input class="visually-hidden field__checkbox" type="checkbox" id="slide-park" name="slide-park">
-                  <label class="field__label field__label--bold field__label--checkbox" for="slide-park">Слайд-парк</label>
+                  <label class="field__label-checkbox" for="slide-park">Слайд-парк</label>
                 </div>
                 <div class="field">
                   <input class="visually-hidden field__checkbox" type="checkbox" id="cliffs" name="cliffs">
-                  <label class="field__label field__label--bold field__label--checkbox" for="cliffs">Красные скалы</label>
+                  <label class="field__label-checkbox" for="cliffs">Красные скалы</label>
                 </div>
               </div>
             </div>
@@ -182,5 +181,6 @@
         </div>
       </div>
     </div>
+    <script src="/js/menu.js"></script>
   </body>
 </html>
