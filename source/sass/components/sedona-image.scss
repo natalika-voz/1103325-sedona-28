@@ -11,6 +11,7 @@
 
   &--small {
     min-height: 158px;
+    background-position: bottom 0 center, top -231px center;
   }
 
   @media (min-resolution: 2dppx) {
@@ -23,6 +24,7 @@
 
     &--small {
       min-height: 290px;
+      background-position: bottom 0 center, top -228px center;
     }
 
     @media (min-resolution: 2dppx) {
@@ -35,6 +37,7 @@
 
     &--small {
       min-height: 301px;
+      background-position: bottom 0 center, top -217px center;
     }
 
     @media (min-resolution: 2dppx) {
@@ -57,11 +60,12 @@
 .sedona-image__single-text {
   width: 229px;
   height: 39px;
-  transform: translateY(-10px);
+  transform: translateY(-8px);
 
   @media (min-width: $tablet-width) {
     width: 457px;
     height: 78px;
+    transform: translateY(-11px);
   }
 
   @media (min-width: $desktop-width) {
