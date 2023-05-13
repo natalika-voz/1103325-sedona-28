@@ -1,20 +1,20 @@
 .feature-header {
   padding-inline: 18px;
-  padding-block: 71px 40px;
+  padding-block: 37px;
   background-color: var(--blue);
   color: var(--white);
   text-transform: uppercase;
 
   &--real-town {
+    padding-block: 70px 40px;
     background-image: url("../img/svg/white-mask.svg");
     background-repeat: no-repeat;
     background-position: top 0 center;
   }
 
   &--gray {
+    padding-block: 24px 25px;
     position: relative;
-    padding-inline-start: 18px;
-    padding-block: 25px;
     background-color: var(--gray-200);
     color: var(--black);
 
@@ -33,45 +33,49 @@
     }
   }
 
-  &--road {
-    padding-block: 24px 25px;
+  &--tourists {
+    padding-inline: 31px;
+    padding-block-end: 29px;
   }
 
-  &--tourists {
-    padding-block: 24px 28px;
+  &--square {
+    padding-inline: 26px;
+  }
+
+  &--road {
+    padding-inline: 42px;
   }
 
   @media (min-width: $tablet-width) {
-    padding-inline: 30px;
-    padding-block: 53px 30px;
+    padding-block: 52px 32px;
+    padding-inline: 31px;
     background-image: none;
 
     &--gray {
-      padding-block-start: 42px;
-      padding-block-end: 42px;
-      padding-inline: 26px;
+      padding-block: 41px;
+      padding-inline: 33px;
 
       &::before {
         content: none;
       }
     }
+
+    &--road {
+      padding-inline: 40px;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    &--gray {
-      padding-block-start: 52px;
-      padding-block-end: 54px;
-    }
+    padding-block: 52px 53px;
+    padding-inline: 55px;
   }
 }
 
 .feature-header__container {
-  padding-block-end: 18px;
   border-bottom: 1px solid #d6d6d6;
 }
 
 .feature-header__container:last-child {
-  padding-block-end: 0;
   border: none;
 }
 
@@ -106,12 +110,4 @@
 .feature-header__text {
   margin-block: 0;
   text-align: center;
-
-  &--road {
-    padding-inline: 20px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-inline: 20px;
-  }
 }

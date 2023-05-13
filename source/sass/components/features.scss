@@ -25,8 +25,13 @@
   }
 
   & .feature-header {
-    padding-block: 38px 36px;
     order: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    & .feature-header {
+      padding-inline: 82px;
+    }
   }
 }
 
