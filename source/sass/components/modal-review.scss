@@ -1,12 +1,38 @@
 .modal-review {
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    align-items: flex-start;
+  }
+}
+
+.modal-review__container {
   padding-block: 0;
   padding-inline: 0;
   max-width: 640px;
+  width: 100%;
+  transform: translateY(20px);
+
+  @media (min-width: $tablet-width) {
+    margin-top: 142px;
+  }
 }
 
 .modal-review__header {
-  padding-block: 39px;
+  padding-block: 39px 51px;
   padding-inline: 39px;
+
+  @media (min-width: $tablet-width) {
+    padding-block: 53px 51px;
+  }
+}
+
+.modal-review__title {
+  @media (min-width: $tablet-width) {
+    margin-block-end: 28px;
+    font-size: 30px;
+    line-height: 26px;
+  }
 }
 
 .modal-review__text {
@@ -26,4 +52,8 @@
 
 .modal-review__button {
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    max-width: none;
+  }
 }
