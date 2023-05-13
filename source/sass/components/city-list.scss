@@ -35,15 +35,38 @@
     row-gap: 22px;
     padding-inline: 33px;
     padding-block-start: 158px;
-    background-size: 77px 72px;
-    background-position: center 60px;
+    background-image: url("../img/svg/icon-house-no-frame.svg");
+    background-size: 78px 72px;
+    background-position: center 59px;
     text-align: center;
+
+    &--food {
+      padding-block-start: 156px;
+      background-image: url("../img/svg/icon-burger-no-frame.svg");
+      background-size: 82px 68px;
+      background-position: center 61px;
+    }
+
+    &--souvenirs {
+      padding-block-start: 153px;
+      background-image: url("../img/svg/icon-gift-no-frame.svg");
+      background-size: 67px 75px;
+      background-position: center 63px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding-block-start: 170px;
-    background-size: 81px 73px;
     background-position: center 68px;
+
+    &--food {
+      padding-block-start: 167px;
+      background-size: 74px 69px;
+    }
+
+    &--souvenirs {
+      background-size: 78px 76px;
+    }
   }
 }
 
