@@ -41,6 +41,7 @@
     text-align: center;
 
     &--food {
+      padding-inline: 50px;
       padding-block-start: 156px;
       background-image: url("../img/svg/icon-burger-no-frame.svg");
       background-size: 82px 68px;
@@ -49,6 +50,7 @@
 
     &--souvenirs {
       padding-block-start: 153px;
+      padding-inline: 40px;
       background-image: url("../img/svg/icon-gift-no-frame.svg");
       background-size: 67px 75px;
       background-position: center 63px;
@@ -57,6 +59,7 @@
 
   @media (min-width: $desktop-width) {
     padding-block-start: 170px;
+    padding-inline: 55px;
     background-position: center 68px;
 
     &--food {
@@ -65,6 +68,7 @@
     }
 
     &--souvenirs {
+      padding-inline: 80px;
       background-size: 78px 76px;
     }
   }
@@ -87,13 +91,9 @@
   color: var(--black-100);
   text-transform: uppercase;
 
-  @media (min-width: $tablet-width) {
-    &--food {
-      margin-inline: 17px;
-    }
-
-    &--souvenirs {
-      margin-inline: 10px;
+  @media (min-width: $desktop-width) {
+    & span {
+      display: block;
     }
   }
 }
