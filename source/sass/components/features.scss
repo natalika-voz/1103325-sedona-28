@@ -10,14 +10,23 @@
 }
 
 .features__item {
-  &--bridge {
-    width: 100%;
-  }
-
   @media (min-width: $tablet-width) {
     &--small {
       width: calc(100% / 3);
     }
+  }
+}
+
+.features__item--bridge {
+  width: 100%;
+
+  & .features__item-top {
+    grid-template-columns: 1fr min(33%, 400px);
+  }
+
+  & .feature-header {
+    padding-block: 38px 36px;
+    order: 1;
   }
 }
 
@@ -31,10 +40,6 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: 400px 1fr;
   }
-}
-
-.features__item-top--bridge {
-  grid-template-columns: 1fr min(33%, 400px);
 }
 
 .features__image {
