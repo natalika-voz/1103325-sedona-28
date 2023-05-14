@@ -60,12 +60,12 @@
 .sedona-image__single-text {
   width: 229px;
   height: 39px;
-  transform: translateY(-8px);
+  margin-top: -15px;
 
   @media (min-width: $tablet-width) {
     width: 457px;
     height: 78px;
-    transform: translateY(-11px);
+    margin-top: -23px;
   }
 
   @media (min-width: $desktop-width) {
